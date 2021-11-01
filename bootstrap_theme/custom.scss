@@ -177,14 +177,30 @@ a,
     columns: 1;
 }
 
+.text-highlight {
+    background-color: $yellow;
+}
+
 $safeAreaInsetTop: env(safe-area-inset-top);
 $safeAreaInsetBottom: env(safe-area-inset-bottom);
 $navHeight: 44px;
-$searchHeight: 44px;
+$searchHeight: 52px;
 $tabsHeight: 48px;
 
 .h-tabs {
     height: $tabsHeight;
+}
+
+.h-nav {
+    height: $navHeight;
+}
+
+.h-search {
+    height: $searchHeight;
+}
+
+.t-nav-search {
+    top: calc(#{$safeAreaInsetTop} + #{$searchHeight} + #{$navHeight});
 }
 
 .pt-safe-area {
@@ -193,6 +209,10 @@ $tabsHeight: 48px;
 
 .pt-nav {
     padding-top: calc(#{$safeAreaInsetTop} + #{$navHeight});
+}
+
+.pt-nav-search {
+    padding-top: calc(#{$safeAreaInsetTop} + #{$searchHeight} + #{$navHeight});
 }
 
 .pb-tabs {

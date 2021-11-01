@@ -13266,14 +13266,29 @@ a,
   -webkit-columns: 1;
           columns: 1; }
 
+.text-highlight {
+  background-color: #ffc107; }
+
 .h-tabs {
   height: 48px; }
+
+.h-nav {
+  height: 44px; }
+
+.h-search {
+  height: 52px; }
+
+.t-nav-search {
+  top: calc(env(safe-area-inset-top) + 52px + 44px); }
 
 .pt-safe-area {
   padding-top: env(safe-area-inset-top); }
 
 .pt-nav {
   padding-top: calc(env(safe-area-inset-top) + 44px); }
+
+.pt-nav-search {
+  padding-top: calc(env(safe-area-inset-top) + 52px + 44px); }
 
 .pb-tabs {
   padding-bottom: calc(env(safe-area-inset-bottom) + 48px); }

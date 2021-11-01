@@ -18,17 +18,17 @@
         <link href="https://cdn.jsdelivr.net/npm/@mdi/font@6.4.95/css/materialdesignicons.min.css" rel="stylesheet" type="text/css">
     </head>
     <body data-pgc-field="jasBody">
-        <header class="bg-white border-bottom fixed-top pt-safe-area" data-pgc-define="jasHeaderNav" data-pgc-define-name="headerNav">
-            <div data-pg-name="navigation" style="height: 44px;" class="align-items-center d-flex">
+        <header class="bg-white border-bottom fixed-top pt-safe-area" data-pgc="jasHeaderNav">
+            <div data-pg-name="navigation" class="align-items-center d-flex h-nav">
                 <div class="container px-0">
                     <div class="align-items-center d-flex justify-content-center">
-                        <div class="d-flex justify-content-start w-50" data-pgc-edit="jasNavLeft">
+                        <div class="d-flex justify-content-start w-50" data-pgc-field="jasNavLeft">
                             <button type="button" class="align-items-center btn btn-link d-inline-flex justify-content-center p-2">
                                 <span class="mdi mdi-chevron-left"></span>
                             </button>
                         </div>
-                        <h1 class="h5 mb-0 text-center text-nowrap text-truncate w-100" data-pgc-edit="jasNavTitle">Settings</h1>
-                        <div class="d-flex justify-content-end w-50" data-pgc-edit="jasNavRight">
+                        <h1 class="h5 mb-0 text-center text-nowrap text-truncate w-100" data-pgc-field="jasNavTitle">Settings</h1>
+                        <div class="d-flex justify-content-end w-50" data-pgc-field="jasNavRight">
                             <div class="btn-group" role="group" aria-label="Basic example"> 
                                 <button type="button" class="align-items-center btn btn-link d-inline-flex justify-content-center p-2">
                                     <span class="mdi mdi-sort"></span>
@@ -158,16 +158,16 @@
                 </div>
             </section>
         </main>
-        <footer class="backdrop-blur border-top fixed-bottom pb-safe-area" data-pgc-define="jasFooterTabs" data-pgc-define-name="footerTabs">
+        <footer class="backdrop-blur border-top fixed-bottom pb-safe-area" data-pgc="jasFooterTabs">
             <div data-pg-name="actions" class="align-items-center d-flex h-tabs">
                 <div class="container px-0">
                     <div class="align-items-center d-flex">
                         <div class="btn-group w-100" role="group" aria-label="Basic example"> 
-                            <a class="align-items-center btn btn-link d-inline-flex flex-column justify-content-start px-1 py-0 text-decoration-none text-muted" href="#"> <span class="mdi mdi-text-box-multiple"></span> <span style="font-size: 11px;">Articles</span> </a>
-                            <a class="align-items-center btn btn-link d-inline-flex flex-column justify-content-start px-1 py-0 text-decoration-none text-muted" href="#"> <span class="mdi mdi-book-multiple"></span> <span style="font-size: 11px;">Journals</span> </a>
-                            <a class="align-items-center btn btn-link d-inline-flex flex-column justify-content-start px-1 py-0 text-decoration-none text-muted" href="#"> <span class="mdi mdi-account-multiple"></span> <span style="font-size: 11px;">Societies</span> </a>
-                            <a class="align-items-center btn btn-link d-inline-flex flex-column justify-content-start px-1 py-0 text-decoration-none text-muted" href="#"> <span class="mdi mdi-magnify"></span> <span style="font-size: 11px;">Search</span> </a>
-                            <a class="align-items-center btn btn-link d-inline-flex flex-column justify-content-start px-1 py-0 text-decoration-none" href="#"> <span class="mdi mdi-cog"></span> <span style="font-size: 11px;">Settings</span> </a> 
+                            <a class="align-items-center btn btn-link d-inline-flex flex-column justify-content-start px-1 py-0 text-decoration-none text-muted" href="#" data-pgc-field="jasTabsArticles"> <span class="mdi mdi-text-box-multiple"></span> <span style="font-size: 11px;">Articles</span> </a>
+                            <a class="align-items-center btn btn-link d-inline-flex flex-column justify-content-start px-1 py-0 text-decoration-none text-muted" href="#" data-pgc-field="jasTabsJournals"> <span class="mdi mdi-book-multiple"></span> <span style="font-size: 11px;">Journals</span> </a>
+                            <a class="align-items-center btn btn-link d-inline-flex flex-column justify-content-start px-1 py-0 text-decoration-none text-muted" href="#" data-pgc-field="jasTabsSocieties"> <span class="mdi mdi-account-multiple"></span> <span style="font-size: 11px;">Societies</span> </a>
+                            <a class="align-items-center btn btn-link d-inline-flex flex-column justify-content-start px-1 py-0 text-decoration-none text-muted" href="#" data-pgc-field="jasTabsSearch"> <span class="mdi mdi-magnify"></span> <span style="font-size: 11px;">Search</span> </a>
+                            <a class="align-items-center btn btn-link d-inline-flex flex-column justify-content-start px-1 py-0 text-decoration-none" href="#" data-pgc-field="jasTabsSettings"> <span class="mdi mdi-cog"></span> <span style="font-size: 11px;">Settings</span> </a> 
                         </div>
                     </div>
                 </div>
