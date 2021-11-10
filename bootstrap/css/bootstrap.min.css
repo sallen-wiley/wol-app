@@ -13310,6 +13310,9 @@ a,
   padding-top: env(safe-area-inset-top);
   padding-bottom: env(safe-area-inset-bottom); }
 
+.min-vh-100 {
+  min-height: -webkit-fill-available !important; }
+
 .backdrop-blur {
   -webkit-backdrop-filter: blur(50px);
   backdrop-filter: blur(50px);
