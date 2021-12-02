@@ -28,13 +28,16 @@
             <div data-pg-name="navigation" class="align-items-center d-flex h-nav">
                 <div class="container">
                     <div class="align-items-center d-flex justify-content-center">
-                        <div class="d-flex justify-content-start w-50" data-pgc-field="jasNavLeft"><a class="align-items-center btn btn-link d-inline-flex justify-content-center p-2" href="../search.html"> <span class="mdi mdi-chevron-left"></span> </a>
+                        <div class="d-flex justify-content-start w-50" data-pgc-field="jasNavLeft">
+                            <a class="align-items-center btn btn-link d-inline-flex justify-content-center p-2" href="../search.html"> <span class="mdi mdi-chevron-left"></span> </a>
                         </div>
                         <h1 class="h5 mb-0 text-center text-nowrap text-truncate w-100" data-pgc-field="jasNavTitle">Results</h1>
                         <div class="align-items-center d-flex justify-content-end w-50" data-pgc-field="jasNavRight">
-                            <button type="button" class="align-items-center btn btn-link d-inline-flex justify-content-center me-1 p-1" data-bs-toggle="modal" data-bs-target="#modal2"><span class="mdi mdi-tune"></span>
+                            <button type="button" class="align-items-center btn btn-link d-inline-flex justify-content-center me-1 p-1" data-bs-toggle="modal" data-bs-target="#modal2">
+                                <span class="mdi mdi-tune"></span>
                             </button>
-                            <button type="button" class="align-items-center btn btn-link d-inline-flex justify-content-center p-1" data-bs-toggle="modal" data-bs-target="#modal1"><span class="mdi mdi-sort"></span>
+                            <button type="button" class="align-items-center btn btn-link d-inline-flex justify-content-center p-1" data-bs-toggle="modal" data-bs-target="#modalSort">
+                                <span class="mdi mdi-sort"></span>
                             </button>
                         </div>
                     </div>
@@ -43,7 +46,7 @@
             <div data-pg-name="search" class="align-items-center d-flex h-search" data-pgc-field="jasSearch">
                 <div class="container">
                     <div class="input-group">
-                        <input type="search" class="form-control" placeholder="Enter search term" aria-label="search" aria-describedby="button-addon2"/>
+                        <input type="search" class="form-control" placeholder="Enter search term" aria-label="search" aria-describedby="button-addon2" data-pgc-field="jasSearchInput"/>
                         <a class="btn btn-link text-decoration-none" id="button-addon2" href="#" data-pgc-field="jasSearchAction">Search</a>
                     </div>
                 </div>
@@ -61,6 +64,86 @@
                         <section>
                             <h2 class="bg-white h5 py-1 sticky-top t-nav-search">2 October</h2>
                             <div class="border-bottom mb-4 pb-4" data-pgc-define="jasListArticle">
+                                <div class="align-items-center d-flex flex-nowrap justify-content-between mb-1">
+                                    <div class="d-inline-flex flex-wrap">
+                                        <span class="me-2 small text-nowrap">Research Articles</span>
+                                        <span class="align-items-center d-inline-flex me-2" style="color:#61165E;"><span class="mdi mdi-18px mdi-lock-open-outline me-1"></span><span class="small text-nowrap">Open Access</span></span>
+                                        <span class="d-inline-flex align-items-center"><span class="mdi mdi-18px mdi-copyright"></span></span>
+                                    </div>
+                                    <div class="ms-auto">
+                                        <div class="btn-group" role="group">
+                                            <button class="btn btn-link text-muted p-1" type="button">
+                                                <span class="mdi mdi-download-circle-outline"></span>
+                                            </button>
+                                            <button class="btn btn-link text-muted p-1" type="button">
+                                                <span class="mdi mdi-star-outline"></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h3 class="h5 mb-1"><a href="#" class="text-decoration-none">Cosmic-ray Neutron Rover Surveys of Field Soil Moisture and the Influence of Roads</a></h3>
+                                <p class="mb-1 small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar faucibus neque, nec rhoncus nunc ultrices sit amet. Curabitur ac sagittis neque, vel <span class="text-highlight">egestas</span> est... Aenean elementum, erat at aliquet hendrerit, elit nisl posuere tortor, id suscipit diam dui sed nisi.</p>
+                                <p class="fst-italic mb-1 small">Makayla Oneal, Dominic Mitchell, Danica Phelps, Frank Lamb, Tiara Dyer, Nickolas Clark, Mila Travis, Dennis Fleming</p>
+                                <p class="fw-bold mb-0 small">Journal of Agriculture</p>
+                            </div>
+                        </section>
+                        <section>
+                            <h2 class="bg-white h5 py-1 sticky-top t-nav-search">26 September</h2>
+                            <div class="border-bottom mb-4 pb-4" data-pgc="jasListArticle">
+                                <div class="align-items-center d-flex flex-nowrap justify-content-between mb-1">
+                                    <div class="d-inline-flex flex-wrap"><span class="me-2 small text-nowrap">Research Articles</span><span class="align-items-center d-inline-flex me-2" style="color:#61165E;"><span class="mdi mdi-18px mdi-lock-open-outline me-1"></span><span class="small text-nowrap">Open Access</span></span><span class="d-inline-flex align-items-center"><span class="mdi mdi-18px mdi-copyright"></span></span>
+                                    </div>
+                                    <div class="ms-auto">
+                                        <div class="btn-group" role="group">
+                                            <button class="btn btn-link text-muted p-1" type="button"><span class="mdi mdi-download-circle-outline"></span>
+                                            </button>
+                                            <button class="btn btn-link text-muted p-1" type="button"><span class="mdi mdi-star-outline"></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h3 class="h5 mb-1"><a href="#" class="text-decoration-none">Cosmic-ray Neutron Rover Surveys of Field Soil Moisture and the Influence of Roads</a></h3>
+                                <p class="mb-1 small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar faucibus neque, nec rhoncus nunc ultrices sit amet. Curabitur ac sagittis neque, vel <span class="text-highlight">egestas</span> est... Aenean elementum, erat at aliquet hendrerit, elit nisl posuere tortor, id suscipit diam dui sed nisi.</p>
+                                <p class="fst-italic mb-1 small">Makayla Oneal, Dominic Mitchell, Danica Phelps, Frank Lamb, Tiara Dyer, Nickolas Clark, Mila Travis, Dennis Fleming</p>
+                                <p class="fw-bold mb-0 small">Journal of Agriculture</p>
+                            </div>
+                            <div class="border-bottom mb-4 pb-4" data-pgc="jasListArticle">
+                                <div class="align-items-center d-flex flex-nowrap justify-content-between mb-1">
+                                    <div class="d-inline-flex flex-wrap"><span class="me-2 small text-nowrap">Research Articles</span><span class="align-items-center d-inline-flex me-2" style="color:#61165E;"><span class="mdi mdi-18px mdi-lock-open-outline me-1"></span><span class="small text-nowrap">Open Access</span></span><span class="d-inline-flex align-items-center"><span class="mdi mdi-18px mdi-copyright"></span></span>
+                                    </div>
+                                    <div class="ms-auto">
+                                        <div class="btn-group" role="group">
+                                            <button class="btn btn-link text-muted p-1" type="button"><span class="mdi mdi-download-circle-outline"></span>
+                                            </button>
+                                            <button class="btn btn-link text-muted p-1" type="button"><span class="mdi mdi-star-outline"></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h3 class="h5 mb-1"><a href="#" class="text-decoration-none">Cosmic-ray Neutron Rover Surveys of Field Soil Moisture and the Influence of Roads</a></h3>
+                                <p class="mb-1 small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar faucibus neque, nec rhoncus nunc ultrices sit amet. Curabitur ac sagittis neque, vel <span class="text-highlight">egestas</span> est... Aenean elementum, erat at aliquet hendrerit, elit nisl posuere tortor, id suscipit diam dui sed nisi.</p>
+                                <p class="fst-italic mb-1 small">Makayla Oneal, Dominic Mitchell, Danica Phelps, Frank Lamb, Tiara Dyer, Nickolas Clark, Mila Travis, Dennis Fleming</p>
+                                <p class="fw-bold mb-0 small">Journal of Agriculture</p>
+                            </div>
+                            <div class="border-bottom mb-4 pb-4" data-pgc="jasListArticle">
+                                <div class="align-items-center d-flex flex-nowrap justify-content-between mb-1">
+                                    <div class="d-inline-flex flex-wrap"><span class="me-2 small text-nowrap">Research Articles</span><span class="align-items-center d-inline-flex me-2" style="color:#61165E;"><span class="mdi mdi-18px mdi-lock-open-outline me-1"></span><span class="small text-nowrap">Open Access</span></span><span class="d-inline-flex align-items-center"><span class="mdi mdi-18px mdi-copyright"></span></span>
+                                    </div>
+                                    <div class="ms-auto">
+                                        <div class="btn-group" role="group">
+                                            <button class="btn btn-link text-muted p-1" type="button"><span class="mdi mdi-download-circle-outline"></span>
+                                            </button>
+                                            <button class="btn btn-link text-muted p-1" type="button"><span class="mdi mdi-star-outline"></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h3 class="h5 mb-1"><a href="#" class="text-decoration-none">Cosmic-ray Neutron Rover Surveys of Field Soil Moisture and the Influence of Roads</a></h3>
+                                <p class="mb-1 small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar faucibus neque, nec rhoncus nunc ultrices sit amet. Curabitur ac sagittis neque, vel <span class="text-highlight">egestas</span> est... Aenean elementum, erat at aliquet hendrerit, elit nisl posuere tortor, id suscipit diam dui sed nisi.</p>
+                                <p class="fst-italic mb-1 small">Makayla Oneal, Dominic Mitchell, Danica Phelps, Frank Lamb, Tiara Dyer, Nickolas Clark, Mila Travis, Dennis Fleming</p>
+                                <p class="fw-bold mb-0 small">Journal of Agriculture</p>
+                            </div>
+                            <div class="border-bottom mb-4 pb-4" data-pgc="jasListArticle">
                                 <div class="align-items-center d-flex flex-nowrap justify-content-between mb-1">
                                     <div class="d-inline-flex flex-wrap"><span class="me-2 small text-nowrap">Research Articles</span><span class="align-items-center d-inline-flex me-2" style="color:#61165E;"><span class="mdi mdi-18px mdi-lock-open-outline me-1"></span><span class="small text-nowrap">Open Access</span></span><span class="d-inline-flex align-items-center"><span class="mdi mdi-18px mdi-copyright"></span></span>
                                     </div>
@@ -80,116 +163,16 @@
                             </div>
                         </section>
                         <section>
-                            <h2 class="bg-white h5 py-1 sticky-top t-nav-search">26 September</h2>
-                            <div class="border-bottom mb-4 pb-4" data-pgc="jasListArticle">
-                                <div class="align-items-center d-flex flex-nowrap justify-content-between mb-1">
-                                    <div class="d-inline-flex flex-wrap">
-                                        <span class="me-2 small text-nowrap">Research Articles</span>
-                                        <span class="align-items-center d-inline-flex me-2" style="color:#61165E;"><span class="mdi mdi-18px mdi-lock-open-outline me-1"></span><span class="small text-nowrap">Open Access</span></span>
-                                        <span class="d-inline-flex align-items-center"><span class="mdi mdi-18px mdi-copyright"></span></span>
-                                    </div>
-                                    <div class="ms-auto">
-                                        <div class="btn-group" role="group">
-                                            <button class="btn btn-link text-muted p-1" type="button">
-                                                <span class="mdi mdi-download-circle-outline"></span>
-                                            </button>
-                                            <button class="btn btn-link text-muted p-1" type="button">
-                                                <span class="mdi mdi-star-outline"></span>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <h3 class="h5 mb-1"><a href="#" class="text-decoration-none">Cosmic-ray Neutron Rover Surveys of Field Soil Moisture and the Influence of Roads</a></h3>
-                                <p class="mb-1 small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar faucibus neque, nec rhoncus nunc ultrices sit amet. Curabitur ac sagittis neque, vel <span class="text-highlight">egestas</span> est... Aenean elementum, erat at aliquet hendrerit, elit nisl posuere tortor, id suscipit diam dui sed nisi.</p>
-                                <p class="fst-italic mb-1 small">Makayla Oneal, Dominic Mitchell, Danica Phelps, Frank Lamb, Tiara Dyer, Nickolas Clark, Mila Travis, Dennis Fleming</p>
-                                <p class="fw-bold mb-0 small">Journal of Agriculture</p>
-                            </div>
-                            <div class="border-bottom mb-4 pb-4" data-pgc="jasListArticle">
-                                <div class="align-items-center d-flex flex-nowrap justify-content-between mb-1">
-                                    <div class="d-inline-flex flex-wrap">
-                                        <span class="me-2 small text-nowrap">Research Articles</span>
-                                        <span class="align-items-center d-inline-flex me-2" style="color:#61165E;"><span class="mdi mdi-18px mdi-lock-open-outline me-1"></span><span class="small text-nowrap">Open Access</span></span>
-                                        <span class="d-inline-flex align-items-center"><span class="mdi mdi-18px mdi-copyright"></span></span>
-                                    </div>
-                                    <div class="ms-auto">
-                                        <div class="btn-group" role="group">
-                                            <button class="btn btn-link text-muted p-1" type="button">
-                                                <span class="mdi mdi-download-circle-outline"></span>
-                                            </button>
-                                            <button class="btn btn-link text-muted p-1" type="button">
-                                                <span class="mdi mdi-star-outline"></span>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <h3 class="h5 mb-1"><a href="#" class="text-decoration-none">Cosmic-ray Neutron Rover Surveys of Field Soil Moisture and the Influence of Roads</a></h3>
-                                <p class="mb-1 small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar faucibus neque, nec rhoncus nunc ultrices sit amet. Curabitur ac sagittis neque, vel <span class="text-highlight">egestas</span> est... Aenean elementum, erat at aliquet hendrerit, elit nisl posuere tortor, id suscipit diam dui sed nisi.</p>
-                                <p class="fst-italic mb-1 small">Makayla Oneal, Dominic Mitchell, Danica Phelps, Frank Lamb, Tiara Dyer, Nickolas Clark, Mila Travis, Dennis Fleming</p>
-                                <p class="fw-bold mb-0 small">Journal of Agriculture</p>
-                            </div>
-                            <div class="border-bottom mb-4 pb-4" data-pgc="jasListArticle">
-                                <div class="align-items-center d-flex flex-nowrap justify-content-between mb-1">
-                                    <div class="d-inline-flex flex-wrap">
-                                        <span class="me-2 small text-nowrap">Research Articles</span>
-                                        <span class="align-items-center d-inline-flex me-2" style="color:#61165E;"><span class="mdi mdi-18px mdi-lock-open-outline me-1"></span><span class="small text-nowrap">Open Access</span></span>
-                                        <span class="d-inline-flex align-items-center"><span class="mdi mdi-18px mdi-copyright"></span></span>
-                                    </div>
-                                    <div class="ms-auto">
-                                        <div class="btn-group" role="group">
-                                            <button class="btn btn-link text-muted p-1" type="button">
-                                                <span class="mdi mdi-download-circle-outline"></span>
-                                            </button>
-                                            <button class="btn btn-link text-muted p-1" type="button">
-                                                <span class="mdi mdi-star-outline"></span>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <h3 class="h5 mb-1"><a href="#" class="text-decoration-none">Cosmic-ray Neutron Rover Surveys of Field Soil Moisture and the Influence of Roads</a></h3>
-                                <p class="mb-1 small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar faucibus neque, nec rhoncus nunc ultrices sit amet. Curabitur ac sagittis neque, vel <span class="text-highlight">egestas</span> est... Aenean elementum, erat at aliquet hendrerit, elit nisl posuere tortor, id suscipit diam dui sed nisi.</p>
-                                <p class="fst-italic mb-1 small">Makayla Oneal, Dominic Mitchell, Danica Phelps, Frank Lamb, Tiara Dyer, Nickolas Clark, Mila Travis, Dennis Fleming</p>
-                                <p class="fw-bold mb-0 small">Journal of Agriculture</p>
-                            </div>
-                            <div class="border-bottom mb-4 pb-4" data-pgc="jasListArticle">
-                                <div class="align-items-center d-flex flex-nowrap justify-content-between mb-1">
-                                    <div class="d-inline-flex flex-wrap">
-                                        <span class="me-2 small text-nowrap">Research Articles</span>
-                                        <span class="align-items-center d-inline-flex me-2" style="color:#61165E;"><span class="mdi mdi-18px mdi-lock-open-outline me-1"></span><span class="small text-nowrap">Open Access</span></span>
-                                        <span class="d-inline-flex align-items-center"><span class="mdi mdi-18px mdi-copyright"></span></span>
-                                    </div>
-                                    <div class="ms-auto">
-                                        <div class="btn-group" role="group">
-                                            <button class="btn btn-link text-muted p-1" type="button">
-                                                <span class="mdi mdi-download-circle-outline"></span>
-                                            </button>
-                                            <button class="btn btn-link text-muted p-1" type="button">
-                                                <span class="mdi mdi-star-outline"></span>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <h3 class="h5 mb-1"><a href="#" class="text-decoration-none">Cosmic-ray Neutron Rover Surveys of Field Soil Moisture and the Influence of Roads</a></h3>
-                                <p class="mb-1 small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar faucibus neque, nec rhoncus nunc ultrices sit amet. Curabitur ac sagittis neque, vel <span class="text-highlight">egestas</span> est... Aenean elementum, erat at aliquet hendrerit, elit nisl posuere tortor, id suscipit diam dui sed nisi.</p>
-                                <p class="fst-italic mb-1 small">Makayla Oneal, Dominic Mitchell, Danica Phelps, Frank Lamb, Tiara Dyer, Nickolas Clark, Mila Travis, Dennis Fleming</p>
-                                <p class="fw-bold mb-0 small">Journal of Agriculture</p>
-                            </div>
-                        </section>
-                        <section>
                             <h2 class="bg-white h5 py-1 sticky-top t-nav-search">20 September</h2> 
                             <div class="border-bottom mb-4 pb-4" data-pgc="jasListArticle">
                                 <div class="align-items-center d-flex flex-nowrap justify-content-between mb-1">
-                                    <div class="d-inline-flex flex-wrap">
-                                        <span class="me-2 small text-nowrap">Research Articles</span>
-                                        <span class="align-items-center d-inline-flex me-2" style="color:#61165E;"><span class="mdi mdi-18px mdi-lock-open-outline me-1"></span><span class="small text-nowrap">Open Access</span></span>
-                                        <span class="d-inline-flex align-items-center"><span class="mdi mdi-18px mdi-copyright"></span></span>
+                                    <div class="d-inline-flex flex-wrap"><span class="me-2 small text-nowrap">Research Articles</span><span class="align-items-center d-inline-flex me-2" style="color:#61165E;"><span class="mdi mdi-18px mdi-lock-open-outline me-1"></span><span class="small text-nowrap">Open Access</span></span><span class="d-inline-flex align-items-center"><span class="mdi mdi-18px mdi-copyright"></span></span>
                                     </div>
                                     <div class="ms-auto">
                                         <div class="btn-group" role="group">
-                                            <button class="btn btn-link text-muted p-1" type="button">
-                                                <span class="mdi mdi-download-circle-outline"></span>
+                                            <button class="btn btn-link text-muted p-1" type="button"><span class="mdi mdi-download-circle-outline"></span>
                                             </button>
-                                            <button class="btn btn-link text-muted p-1" type="button">
-                                                <span class="mdi mdi-star-outline"></span>
+                                            <button class="btn btn-link text-muted p-1" type="button"><span class="mdi mdi-star-outline"></span>
                                             </button>
                                         </div>
                                     </div>
@@ -201,18 +184,13 @@
                             </div>
                             <div class="border-bottom mb-4 pb-4" data-pgc="jasListArticle">
                                 <div class="align-items-center d-flex flex-nowrap justify-content-between mb-1">
-                                    <div class="d-inline-flex flex-wrap">
-                                        <span class="me-2 small text-nowrap">Research Articles</span>
-                                        <span class="align-items-center d-inline-flex me-2" style="color:#61165E;"><span class="mdi mdi-18px mdi-lock-open-outline me-1"></span><span class="small text-nowrap">Open Access</span></span>
-                                        <span class="d-inline-flex align-items-center"><span class="mdi mdi-18px mdi-copyright"></span></span>
+                                    <div class="d-inline-flex flex-wrap"><span class="me-2 small text-nowrap">Research Articles</span><span class="align-items-center d-inline-flex me-2" style="color:#61165E;"><span class="mdi mdi-18px mdi-lock-open-outline me-1"></span><span class="small text-nowrap">Open Access</span></span><span class="d-inline-flex align-items-center"><span class="mdi mdi-18px mdi-copyright"></span></span>
                                     </div>
                                     <div class="ms-auto">
                                         <div class="btn-group" role="group">
-                                            <button class="btn btn-link text-muted p-1" type="button">
-                                                <span class="mdi mdi-download-circle-outline"></span>
+                                            <button class="btn btn-link text-muted p-1" type="button"><span class="mdi mdi-download-circle-outline"></span>
                                             </button>
-                                            <button class="btn btn-link text-muted p-1" type="button">
-                                                <span class="mdi mdi-star-outline"></span>
+                                            <button class="btn btn-link text-muted p-1" type="button"><span class="mdi mdi-star-outline"></span>
                                             </button>
                                         </div>
                                     </div>
@@ -224,18 +202,13 @@
                             </div>
                             <div class="border-bottom mb-4 pb-4" data-pgc="jasListArticle">
                                 <div class="align-items-center d-flex flex-nowrap justify-content-between mb-1">
-                                    <div class="d-inline-flex flex-wrap">
-                                        <span class="me-2 small text-nowrap">Research Articles</span>
-                                        <span class="align-items-center d-inline-flex me-2" style="color:#61165E;"><span class="mdi mdi-18px mdi-lock-open-outline me-1"></span><span class="small text-nowrap">Open Access</span></span>
-                                        <span class="d-inline-flex align-items-center"><span class="mdi mdi-18px mdi-copyright"></span></span>
+                                    <div class="d-inline-flex flex-wrap"><span class="me-2 small text-nowrap">Research Articles</span><span class="align-items-center d-inline-flex me-2" style="color:#61165E;"><span class="mdi mdi-18px mdi-lock-open-outline me-1"></span><span class="small text-nowrap">Open Access</span></span><span class="d-inline-flex align-items-center"><span class="mdi mdi-18px mdi-copyright"></span></span>
                                     </div>
                                     <div class="ms-auto">
                                         <div class="btn-group" role="group">
-                                            <button class="btn btn-link text-muted p-1" type="button">
-                                                <span class="mdi mdi-download-circle-outline"></span>
+                                            <button class="btn btn-link text-muted p-1" type="button"><span class="mdi mdi-download-circle-outline"></span>
                                             </button>
-                                            <button class="btn btn-link text-muted p-1" type="button">
-                                                <span class="mdi mdi-star-outline"></span>
+                                            <button class="btn btn-link text-muted p-1" type="button"><span class="mdi mdi-star-outline"></span>
                                             </button>
                                         </div>
                                     </div>
@@ -247,18 +220,13 @@
                             </div>
                             <div class="border-bottom mb-4 pb-4" data-pgc="jasListArticle">
                                 <div class="align-items-center d-flex flex-nowrap justify-content-between mb-1">
-                                    <div class="d-inline-flex flex-wrap">
-                                        <span class="me-2 small text-nowrap">Research Articles</span>
-                                        <span class="align-items-center d-inline-flex me-2" style="color:#61165E;"><span class="mdi mdi-18px mdi-lock-open-outline me-1"></span><span class="small text-nowrap">Open Access</span></span>
-                                        <span class="d-inline-flex align-items-center"><span class="mdi mdi-18px mdi-copyright"></span></span>
+                                    <div class="d-inline-flex flex-wrap"><span class="me-2 small text-nowrap">Research Articles</span><span class="align-items-center d-inline-flex me-2" style="color:#61165E;"><span class="mdi mdi-18px mdi-lock-open-outline me-1"></span><span class="small text-nowrap">Open Access</span></span><span class="d-inline-flex align-items-center"><span class="mdi mdi-18px mdi-copyright"></span></span>
                                     </div>
                                     <div class="ms-auto">
                                         <div class="btn-group" role="group">
-                                            <button class="btn btn-link text-muted p-1" type="button">
-                                                <span class="mdi mdi-download-circle-outline"></span>
+                                            <button class="btn btn-link text-muted p-1" type="button"><span class="mdi mdi-download-circle-outline"></span>
                                             </button>
-                                            <button class="btn btn-link text-muted p-1" type="button">
-                                                <span class="mdi mdi-star-outline"></span>
+                                            <button class="btn btn-link text-muted p-1" type="button"><span class="mdi mdi-star-outline"></span>
                                             </button>
                                         </div>
                                     </div>
@@ -273,18 +241,13 @@
                             <h2 class="bg-white h5 py-1 sticky-top t-nav-search">19 September</h2> 
                             <div class="border-bottom mb-4 pb-4" data-pgc="jasListArticle">
                                 <div class="align-items-center d-flex flex-nowrap justify-content-between mb-1">
-                                    <div class="d-inline-flex flex-wrap">
-                                        <span class="me-2 small text-nowrap">Research Articles</span>
-                                        <span class="align-items-center d-inline-flex me-2" style="color:#61165E;"><span class="mdi mdi-18px mdi-lock-open-outline me-1"></span><span class="small text-nowrap">Open Access</span></span>
-                                        <span class="d-inline-flex align-items-center"><span class="mdi mdi-18px mdi-copyright"></span></span>
+                                    <div class="d-inline-flex flex-wrap"><span class="me-2 small text-nowrap">Research Articles</span><span class="align-items-center d-inline-flex me-2" style="color:#61165E;"><span class="mdi mdi-18px mdi-lock-open-outline me-1"></span><span class="small text-nowrap">Open Access</span></span><span class="d-inline-flex align-items-center"><span class="mdi mdi-18px mdi-copyright"></span></span>
                                     </div>
                                     <div class="ms-auto">
                                         <div class="btn-group" role="group">
-                                            <button class="btn btn-link text-muted p-1" type="button">
-                                                <span class="mdi mdi-download-circle-outline"></span>
+                                            <button class="btn btn-link text-muted p-1" type="button"><span class="mdi mdi-download-circle-outline"></span>
                                             </button>
-                                            <button class="btn btn-link text-muted p-1" type="button">
-                                                <span class="mdi mdi-star-outline"></span>
+                                            <button class="btn btn-link text-muted p-1" type="button"><span class="mdi mdi-star-outline"></span>
                                             </button>
                                         </div>
                                     </div>
@@ -296,18 +259,13 @@
                             </div>
                             <div class="border-bottom mb-4 pb-4" data-pgc="jasListArticle">
                                 <div class="align-items-center d-flex flex-nowrap justify-content-between mb-1">
-                                    <div class="d-inline-flex flex-wrap">
-                                        <span class="me-2 small text-nowrap">Research Articles</span>
-                                        <span class="align-items-center d-inline-flex me-2" style="color:#61165E;"><span class="mdi mdi-18px mdi-lock-open-outline me-1"></span><span class="small text-nowrap">Open Access</span></span>
-                                        <span class="d-inline-flex align-items-center"><span class="mdi mdi-18px mdi-copyright"></span></span>
+                                    <div class="d-inline-flex flex-wrap"><span class="me-2 small text-nowrap">Research Articles</span><span class="align-items-center d-inline-flex me-2" style="color:#61165E;"><span class="mdi mdi-18px mdi-lock-open-outline me-1"></span><span class="small text-nowrap">Open Access</span></span><span class="d-inline-flex align-items-center"><span class="mdi mdi-18px mdi-copyright"></span></span>
                                     </div>
                                     <div class="ms-auto">
                                         <div class="btn-group" role="group">
-                                            <button class="btn btn-link text-muted p-1" type="button">
-                                                <span class="mdi mdi-download-circle-outline"></span>
+                                            <button class="btn btn-link text-muted p-1" type="button"><span class="mdi mdi-download-circle-outline"></span>
                                             </button>
-                                            <button class="btn btn-link text-muted p-1" type="button">
-                                                <span class="mdi mdi-star-outline"></span>
+                                            <button class="btn btn-link text-muted p-1" type="button"><span class="mdi mdi-star-outline"></span>
                                             </button>
                                         </div>
                                     </div>
@@ -319,18 +277,13 @@
                             </div>
                             <div class="border-bottom mb-4 pb-4" data-pgc="jasListArticle">
                                 <div class="align-items-center d-flex flex-nowrap justify-content-between mb-1">
-                                    <div class="d-inline-flex flex-wrap">
-                                        <span class="me-2 small text-nowrap">Research Articles</span>
-                                        <span class="align-items-center d-inline-flex me-2" style="color:#61165E;"><span class="mdi mdi-18px mdi-lock-open-outline me-1"></span><span class="small text-nowrap">Open Access</span></span>
-                                        <span class="d-inline-flex align-items-center"><span class="mdi mdi-18px mdi-copyright"></span></span>
+                                    <div class="d-inline-flex flex-wrap"><span class="me-2 small text-nowrap">Research Articles</span><span class="align-items-center d-inline-flex me-2" style="color:#61165E;"><span class="mdi mdi-18px mdi-lock-open-outline me-1"></span><span class="small text-nowrap">Open Access</span></span><span class="d-inline-flex align-items-center"><span class="mdi mdi-18px mdi-copyright"></span></span>
                                     </div>
                                     <div class="ms-auto">
                                         <div class="btn-group" role="group">
-                                            <button class="btn btn-link text-muted p-1" type="button">
-                                                <span class="mdi mdi-download-circle-outline"></span>
+                                            <button class="btn btn-link text-muted p-1" type="button"><span class="mdi mdi-download-circle-outline"></span>
                                             </button>
-                                            <button class="btn btn-link text-muted p-1" type="button">
-                                                <span class="mdi mdi-star-outline"></span>
+                                            <button class="btn btn-link text-muted p-1" type="button"><span class="mdi mdi-star-outline"></span>
                                             </button>
                                         </div>
                                     </div>
@@ -342,18 +295,13 @@
                             </div>
                             <div class="border-bottom mb-4 pb-4" data-pgc="jasListArticle">
                                 <div class="align-items-center d-flex flex-nowrap justify-content-between mb-1">
-                                    <div class="d-inline-flex flex-wrap">
-                                        <span class="me-2 small text-nowrap">Research Articles</span>
-                                        <span class="align-items-center d-inline-flex me-2" style="color:#61165E;"><span class="mdi mdi-18px mdi-lock-open-outline me-1"></span><span class="small text-nowrap">Open Access</span></span>
-                                        <span class="d-inline-flex align-items-center"><span class="mdi mdi-18px mdi-copyright"></span></span>
+                                    <div class="d-inline-flex flex-wrap"><span class="me-2 small text-nowrap">Research Articles</span><span class="align-items-center d-inline-flex me-2" style="color:#61165E;"><span class="mdi mdi-18px mdi-lock-open-outline me-1"></span><span class="small text-nowrap">Open Access</span></span><span class="d-inline-flex align-items-center"><span class="mdi mdi-18px mdi-copyright"></span></span>
                                     </div>
                                     <div class="ms-auto">
                                         <div class="btn-group" role="group">
-                                            <button class="btn btn-link text-muted p-1" type="button">
-                                                <span class="mdi mdi-download-circle-outline"></span>
+                                            <button class="btn btn-link text-muted p-1" type="button"><span class="mdi mdi-download-circle-outline"></span>
                                             </button>
-                                            <button class="btn btn-link text-muted p-1" type="button">
-                                                <span class="mdi mdi-star-outline"></span>
+                                            <button class="btn btn-link text-muted p-1" type="button"><span class="mdi mdi-star-outline"></span>
                                             </button>
                                         </div>
                                     </div>
@@ -368,7 +316,7 @@
                 </div>
             </section>
             <div data-pg-name="modals">
-                <div class="fade modal" id="modal1" tabindex="-1" role="dialog" aria-hidden="true"> 
+                <div class="fade modal" id="modalSort" tabindex="-1" role="dialog" aria-hidden="true" data-pgc-define="modalSort" data-pgc-define-name="modal-sort"> 
                     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-sm"> 
                         <div class="modal-content"> 
                             <div class="bg-light border-bottom-0 modal-header"> 
@@ -377,7 +325,7 @@
                             </div>                             
                             <div class="bg-light modal-body"> 
                                 <section class="bg-white mb-2 px-2 rounded">
-                                    <div class="list-group list-group-flush"> <a class="d-flex link-primary list-group-item px-0" href="#">Most relevant</a> <a class="d-flex link-primary list-group-item px-0" href="#">Most recent<span class="mdi mdi-check ms-auto"></span></a> 
+                                    <div class="list-group list-group-flush"> <a class="d-flex link-primary list-group-item px-0" href="#" data-pgc-repeat="modalSortItem" data-pgc-edit="modalSortItemLabel" data-pgc-edit-classes="active">Most relevant</a> <a class="d-flex link-primary list-group-item px-0" href="#">Most recent<span class="mdi mdi-check ms-auto"></span></a> 
                                     </div>
                                 </section>
                             </div>                             
@@ -412,11 +360,15 @@
                                 <section>
                                     <h5>Publication date</h5>
                                     <section class="bg-white mb-2 px-2 rounded">
-                                        <div class="list-group list-group-flush"> <a class="d-flex link-primary list-group-item px-0" href="#">All</a> <a class="d-flex link-primary list-group-item px-0" href="#">Last 30 days</a><a class="d-flex link-primary list-group-item px-0" href="#">Last 6 months</a><a class="d-flex link-primary list-group-item px-0" href="#">Last year</a><a class="d-flex link-primary list-group-item px-0" href="#">Custom range<span class="mdi mdi-check ms-auto"></span></a> 
+                                        <div class="list-group list-group-flush"> <a class="d-flex link-primary list-group-item px-0" href="#">All</a> <a class="d-flex link-primary list-group-item px-0" href="#">Last 30 days</a>
+                                            <a class="d-flex link-primary list-group-item px-0" href="#">Last 6 months</a>
+                                            <a class="d-flex link-primary list-group-item px-0" href="#">Last year</a>
+                                            <a class="d-flex link-primary list-group-item px-0" href="#">Custom range<span class="mdi mdi-check ms-auto"></span></a> 
                                         </div>
                                     </section>
                                     <section class="bg-white mb-2 px-2 rounded">
-                                        <div class="list-group list-group-flush"> <a class="d-flex link-primary list-group-item px-0" href="#">From</a><a class="d-flex link-primary list-group-item px-0" href="#">To</a> 
+                                        <div class="list-group list-group-flush"> <a class="d-flex link-primary list-group-item px-0" href="#">From</a>
+                                            <a class="d-flex link-primary list-group-item px-0" href="#">To</a> 
                                         </div>
                                     </section>
                                 </section>                                 
@@ -436,7 +388,7 @@
                     <div class="align-items-center d-flex">
                         <div class="btn-group w-100" role="group" aria-label="Basic example"> <a class="align-items-center btn btn-link d-inline-flex flex-column justify-content-start px-1 py-0 text-decoration-none text-muted" href="../articles/my-articles.html" data-pgc-field="jasTabsArticles"> <span class="mdi mdi-text-box-multiple"></span> <span style="font-size: 11px;">Articles</span> </a>
                             <a class="align-items-center btn btn-link d-inline-flex flex-column justify-content-start px-1 py-0 text-decoration-none text-muted" href="#" data-pgc-field="jasTabsJournals"> <span class="mdi mdi-book-multiple"></span> <span style="font-size: 11px;">Journals</span> </a>
-                            <a class="align-items-center btn btn-link d-inline-flex flex-column justify-content-start px-1 py-0 text-decoration-none text-muted" href="#" data-pgc-field="jasTabsSocieties"> <span class="mdi mdi-account-multiple"></span> <span style="font-size: 11px;">Societies</span> </a>
+                            <a class="align-items-center btn btn-link d-inline-flex flex-column justify-content-start px-1 py-0 text-decoration-none text-muted" href="../societies/all-societies.html" data-pgc-field="jasTabsSocieties"> <span class="mdi mdi-account-multiple"></span> <span style="font-size: 11px;">Societies</span> </a>
                             <a class="align-items-center btn btn-link d-inline-flex flex-column justify-content-start px-1 py-0 text-decoration-none" href="../search.html" data-pgc-field="jasTabsSearch"> <span class="mdi mdi-magnify"></span> <span style="font-size: 11px;">Search</span> </a>
                             <a class="align-items-center btn btn-link d-inline-flex flex-column justify-content-start px-1 py-0 text-decoration-none text-muted" href="../settings.html" data-pgc-field="jasTabsSettings"> <span class="mdi mdi-cog"></span> <span style="font-size: 11px;">Settings</span> </a> 
                         </div>

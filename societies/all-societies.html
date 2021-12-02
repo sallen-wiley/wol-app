@@ -29,33 +29,58 @@
                 <div class="container">
                     <div class="align-items-center d-flex justify-content-center">
                         <div class="d-flex justify-content-start w-50" data-pgc-field="jasNavLeft">
-                            <a class="align-items-center btn btn-link d-inline-flex justify-content-center p-2" href="my-articles.html"> <span class="mdi mdi-chevron-left"></span> </a>
-                        </div>
-                        <h1 class="h5 mb-0 text-center text-nowrap text-truncate w-100" data-pgc-field="jasNavTitle">Favorite Articles</h1>
-                        <div class="align-items-center d-flex justify-content-end w-50" data-pgc-field="jasNavRight">
 </div>
+                        <div class="btn-group btn-group-sm" role="group" aria-label="Basic example" data-pgc-field="jasNavTabsOptional"> 
+                            <button type="button" class="btn btn-outline-primary text-nowrap" data-pgc-field="jasNavTabsLeft">My Societies</button>                             
+                            <button type="button" class="active btn btn-outline-primary text-nowrap" data-pgc-field="jasNavTabsRight">All Societies</button>                             
+                        </div>
+                        <div class="align-items-center d-flex justify-content-end w-50" data-pgc-field="jasNavRight">
+                            <div class="btn-group" role="group" aria-label="Basic example"> 
+                                <button type="button" class="align-items-center btn btn-link d-inline-flex justify-content-center p-2" data-bs-target="#modalSort" data-bs-toggle="modal">
+                                    <span class="mdi mdi-sort"></span>
+                                </button>                                 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-pg-name="search" class="align-items-center d-flex h-search" data-pgc-field="jasSearch">
+                <div class="container">
+                    <div class="input-group">
+                        <input type="search" class="form-control" placeholder="Search all societies" aria-label="search" aria-describedby="button-addon2" data-pgc-field="jasSearchInput"/>
+                        <a class="btn btn-link text-decoration-none" id="button-addon2" href="#" data-pgc-field="jasSearchAction">Search</a>
                     </div>
                 </div>
             </div>
         </header>
-        <main class="align-items-center d-flex justify-content-center min-vh-100 pb-tabs pt-nav">
-            <section>
-                <div class="container">
-                    <div class="py-5 text-center">
-                        <p>You have not favorited any articles.</p>
-                        <p>To favorite an article, please tap the&nbsp;<span class="align-bottom mdi mdi-star-outline text-primary"></span></p>
-                        <a class="btn btn-primary" href="#">View recent articles</a>
-                    </div>
+        <main class="min-vh-100 pb-tabs pt-nav-search">
+            <div data-pg-name="modals">
+                <div class="fade modal" id="modalSort" tabindex="-1" role="dialog" aria-hidden="true" data-pgc="modalSort"> 
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-sm"> 
+                        <div class="modal-content"> 
+                            <div class="bg-light border-bottom-0 modal-header"> 
+                                <h4 class="modal-title">Sort by</h4> 
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>                                 
+                            </div>                             
+                            <div class="bg-light modal-body"> 
+                                <section class="bg-white mb-2 px-2 rounded">
+                                    <div class="list-group list-group-flush"> <a class="d-flex link-primary list-group-item px-0" href="#" data-pgc-field="modalSortItemLabel">Alphabetically</a>
+                                        <a class="d-flex link-primary list-group-item px-0" href="#" data-pgc-field="modalSortItemLabel">Most read</a> <a class="d-flex link-primary list-group-item px-0" href="#">Most recent<span class="mdi mdi-check ms-auto"></span></a> 
+                                    </div>
+                                </section>
+                            </div>                             
+                        </div>                         
+                    </div>                     
                 </div>
-            </section>
+            </div>
         </main>
         <footer class="backdrop-blur border-top fixed-bottom pb-safe-area" data-pgc="jasFooterTabs">
             <div data-pg-name="actions" class="align-items-center d-flex h-tabs">
                 <div class="container px-0">
                     <div class="align-items-center d-flex">
-                        <div class="btn-group w-100" role="group" aria-label="Basic example"> <a class="align-items-center btn btn-link d-inline-flex flex-column justify-content-start px-1 py-0 text-decoration-none" href="my-articles.html" data-pgc-field="jasTabsArticles"> <span class="mdi mdi-text-box-multiple"></span> <span style="font-size: 11px;">Articles</span> </a>
+                        <div class="btn-group w-100" role="group" aria-label="Basic example"> <a class="align-items-center btn btn-link d-inline-flex flex-column justify-content-start px-1 py-0 text-decoration-none text-muted" href="../articles/my-articles.html" data-pgc-field="jasTabsArticles"> <span class="mdi mdi-text-box-multiple"></span> <span style="font-size: 11px;">Articles</span> </a>
                             <a class="align-items-center btn btn-link d-inline-flex flex-column justify-content-start px-1 py-0 text-decoration-none text-muted" href="#" data-pgc-field="jasTabsJournals"> <span class="mdi mdi-book-multiple"></span> <span style="font-size: 11px;">Journals</span> </a>
-                            <a class="align-items-center btn btn-link d-inline-flex flex-column justify-content-start px-1 py-0 text-decoration-none text-muted" href="../societies/all-societies.html" data-pgc-field="jasTabsSocieties"> <span class="mdi mdi-account-multiple"></span> <span style="font-size: 11px;">Societies</span> </a>
+                            <a class="align-items-center btn btn-link d-inline-flex flex-column justify-content-start px-1 py-0 text-decoration-none" href="" data-pgc-field="jasTabsSocieties"> <span class="mdi mdi-account-multiple"></span> <span style="font-size: 11px;">Societies</span> </a>
                             <a class="align-items-center btn btn-link d-inline-flex flex-column justify-content-start px-1 py-0 text-decoration-none text-muted" href="../search.html" data-pgc-field="jasTabsSearch"> <span class="mdi mdi-magnify"></span> <span style="font-size: 11px;">Search</span> </a>
                             <a class="align-items-center btn btn-link d-inline-flex flex-column justify-content-start px-1 py-0 text-decoration-none text-muted" href="../settings.html" data-pgc-field="jasTabsSettings"> <span class="mdi mdi-cog"></span> <span style="font-size: 11px;">Settings</span> </a> 
                         </div>
