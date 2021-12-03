@@ -117,15 +117,7 @@ $utilities: map-merge(
 @import "bootstrap/bootstrap";
 
 /* Custom CSS rules come here */
-.serif {
-    font-family: 'Source Serif Pro', serif;
-}
-
-a,
-.btn-link {
-    font-weight: $font-weight-bold;
-}
-
+// // material design icons
 .mdi {
     display: inline-block;
     text-align: center;
@@ -155,12 +147,14 @@ a,
     }
 }
 
-.wol--bg-gradient--blue-green {
-    background-image: linear-gradient(135deg, $green,$blue 100%);
+// // Generic
+.serif {
+    font-family: 'Source Serif Pro', serif;
 }
 
-.wol--bg-gradient--gray {
-    background-image: linear-gradient(135deg,$gray-100 0,$gray-400 100%);
+a,
+.btn-link {
+    font-weight: $font-weight-bold;
 }
 
 .img-contain {
@@ -181,6 +175,38 @@ a,
     background-color: $yellow;
 }
 
+.backdrop-blur {
+    -webkit-backdrop-filter: blur(50px);
+    backdrop-filter: blur(50px);
+    background-color: rgba(255,255,255,0.25);
+}
+
+.show-when-active {
+    display: none;
+}
+
+.active .show-when-active {
+    display: initial;
+}
+
+.hide-when-active {
+    display: initial;
+}
+
+.active .hide-when-active {
+    display: none;
+}
+
+// // WOL branding
+.wol--bg-gradient--blue-green {
+    background-image: linear-gradient(135deg, $green,$blue 100%);
+}
+
+.wol--bg-gradient--gray {
+    background-image: linear-gradient(135deg,$gray-100 0,$gray-400 100%);
+}
+
+// // mobile layout
 $safeAreaInsetTop: env(safe-area-inset-top);
 $safeAreaInsetBottom: env(safe-area-inset-bottom);
 $navHeight: 44px;
@@ -243,10 +269,4 @@ $tabsHeight: 48px;
 
 .min-vh-100 {
     min-height: -webkit-fill-available !important;
-}
-
-.backdrop-blur {
-    -webkit-backdrop-filter: blur(50px);
-    backdrop-filter: blur(50px);
-    background-color: rgba(255,255,255,0.25);
 }
