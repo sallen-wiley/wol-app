@@ -212,6 +212,7 @@ $safeAreaInsetBottom: env(safe-area-inset-bottom);
 $navHeight: 44px;
 $searchHeight: 52px;
 $tabsHeight: 48px;
+$miniNavHeight: 27px;
 
 .h-tabs {
     height: $tabsHeight;
@@ -225,8 +226,20 @@ $tabsHeight: 48px;
     height: $searchHeight;
 }
 
+.h-miniNav {
+    height: $miniNavHeight;
+}
+
+.t-nav {
+    top: calc(#{$safeAreaInsetTop} + #{$navHeight});
+}
+
 .t-nav-search {
     top: calc(#{$safeAreaInsetTop} + #{$searchHeight} + #{$navHeight});
+}
+
+.t-nav-miniNav {
+    top: calc(#{$safeAreaInsetTop} + #{$miniNavHeight} + #{$navHeight});
 }
 
 .pt-safe-area {
@@ -239,6 +252,10 @@ $tabsHeight: 48px;
 
 .pt-nav-search {
     padding-top: calc(#{$safeAreaInsetTop} + #{$searchHeight} + #{$navHeight});
+}
+
+.pt-nav-miniNav {
+    padding-top: calc(#{$safeAreaInsetTop} + #{$miniNavHeight} + #{$navHeight});
 }
 
 .pb-tabs {
@@ -268,5 +285,6 @@ $tabsHeight: 48px;
 }
 
 .min-vh-100 {
-    min-height: -webkit-fill-available !important;
+    min-height: 100vh !important;
+    min-height: fill-available !important;
 }

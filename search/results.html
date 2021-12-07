@@ -24,7 +24,7 @@
         <link href="https://cdn.jsdelivr.net/npm/@mdi/font@6.4.95/css/materialdesignicons.min.css" rel="stylesheet" type="text/css"/>
     </head>
     <body class="bg-light" data-pgc-field="jasBody">
-        <header class="bg-white border-bottom fixed-top pt-safe-area" data-pgc="jasHeader">
+        <header class="border-bottom fixed-top pt-safe-area" style="background-color: #ffffff;" data-pgc="jasHeader" data-pgc-field="jasNav">
             <div data-pg-name="navigation" class="align-items-center d-flex h-nav">
                 <div class="container">
                     <div class="align-items-center d-flex justify-content-center">
@@ -32,7 +32,7 @@
                         </div>
                         <h1 class="h5 mb-0 text-center text-nowrap text-truncate w-100" data-pgc-field="jasNavTitle">Results</h1>
                         <div class="align-items-center d-flex justify-content-end w-50" data-pgc-field="jasNavRight">
-                            <button type="button" class="align-items-center btn btn-link d-inline-flex justify-content-center me-1 p-1" data-bs-toggle="modal" data-bs-target="#modal2"><span class="mdi mdi-tune"></span>
+                            <button type="button" class="align-items-center btn btn-link d-inline-flex justify-content-center p-1" data-bs-toggle="modal" data-bs-target="#modalFilters"><span class="mdi mdi-tune"></span>
                             </button>
                             <button type="button" class="align-items-center btn btn-link d-inline-flex justify-content-center p-1" data-bs-toggle="modal" data-bs-target="#modalSort"><span class="mdi mdi-sort"></span>
                             </button>
@@ -384,7 +384,7 @@
                         </div>                         
                     </div>                     
                 </div>
-                <div class="fade modal" id="modal2" tabindex="-1" role="dialog" aria-hidden="true"> 
+                <div class="fade modal" id="modalFilters" tabindex="-1" role="dialog" aria-hidden="true"> 
                     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-sm"> 
                         <div class="modal-content"> 
                             <div class="bg-light border-bottom-0 modal-header"> 
@@ -393,30 +393,31 @@
                             </div>                             
                             <div class="bg-light modal-body">
                                 <section class="mb-4">
-                                    <h5>Search in</h5>
-                                    <section class="bg-white mb-2 px-2 rounded">
-                                        <ul class="list-group list-group-flush"> 
-                                            <li class="d-flex list-group-item px-0">
-                                                Downloaded content only
+                                    <h5 class="h6">Search in</h5>
+                                    <section class="mb-2">
+                                        <ul class="list-group list-group-flush rounded shadow-sm"> 
+                                            <li class="d-flex list-group-item px-2">
+                                                <label for="flexSwitchCheckChecked">Downloaded content only</label>
                                                 <div class="form-check form-switch ms-auto">
                                                     <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked/>
                                                 </div>
                                             </li>                                             
                                         </ul>
                                     </section>
-                                    <section class="bg-white mb-2 px-2 rounded">
-                                        <div class="list-group list-group-flush"> <a class="d-flex link-primary list-group-item px-0" href="#">All journals<span class="mdi mdi-check ms-auto"></span></a> <a class="d-flex link-primary list-group-item px-0" href="#">My journals</a> 
+                                    <section class="mb-2">
+                                        <div class="list-group list-group-flush rounded shadow-sm"> <a class="active d-flex list-group-item px-2" href="#">All journals<br/><span class="mdi mdi-check ms-auto show-when-active"></span></a>
+                                            <a class="d-flex list-group-item px-2" href="#">My Journals<span class="mdi mdi-check ms-auto show-when-active"></span></a> 
                                         </div>
                                     </section>
                                 </section>
                                 <section>
-                                    <h5>Publication date</h5>
-                                    <section class="bg-white mb-2 px-2 rounded">
-                                        <div class="list-group list-group-flush"> <a class="d-flex link-primary list-group-item px-0" href="#">All</a> <a class="d-flex link-primary list-group-item px-0" href="#">Last 30 days</a><a class="d-flex link-primary list-group-item px-0" href="#">Last 6 months</a><a class="d-flex link-primary list-group-item px-0" href="#">Last year</a><a class="d-flex link-primary list-group-item px-0" href="#">Custom range<span class="mdi mdi-check ms-auto"></span></a> 
+                                    <h5 class="h6">Publication date</h5>
+                                    <section class="mb-2">
+                                        <div class="list-group list-group-flush rounded shadow-sm"> <a class="d-flex list-group-item px-2" href="#">All<br/><span class="mdi mdi-check ms-auto show-when-active"></span></a><a class="d-flex list-group-item px-2" href="#">Last 30 days<br/><span class="mdi mdi-check ms-auto show-when-active"></span></a><a class="d-flex list-group-item px-2" href="#">Last 6 months<br/><span class="mdi mdi-check ms-auto show-when-active"></span></a><a class="d-flex list-group-item px-2" href="#">Last year<br/><span class="mdi mdi-check ms-auto show-when-active"></span></a><a class="d-flex list-group-item px-2 active" href="#">Custom range<span class="mdi mdi-check ms-auto show-when-active"></span></a> 
                                         </div>
                                     </section>
-                                    <section class="bg-white mb-2 px-2 rounded">
-                                        <div class="list-group list-group-flush"> <a class="d-flex link-primary list-group-item px-0" href="#">From</a><a class="d-flex link-primary list-group-item px-0" href="#">To</a> 
+                                    <section class="mb-2">
+                                        <div class="list-group list-group-flush rounded shadow-sm"> <a class="d-flex list-group-item px-2" href="#">From<br/><span class="mdi mdi-check ms-auto show-when-active"></span></a><a class="d-flex list-group-item px-2" href="#">To<br/><span class="mdi mdi-check ms-auto show-when-active"></span></a> 
                                         </div>
                                     </section>
                                 </section>                                 
@@ -434,7 +435,7 @@
             <div data-pg-name="actions" class="align-items-center d-flex h-tabs">
                 <div class="container px-0">
                     <div class="align-items-center d-flex">
-                        <div class="btn-group w-100" role="group" aria-label="Basic example"> <a class="align-items-center btn btn-link d-inline-flex flex-column justify-content-start px-1 py-0 text-decoration-none text-muted" href="../articles/my-articles.html" data-pgc-field="jasTabsArticles"> <span class="mdi mdi-text-box-multiple"></span> <span style="font-size: 11px;">Articles</span> </a><a class="align-items-center btn btn-link d-inline-flex flex-column justify-content-start px-1 py-0 text-decoration-none text-muted" href="#" data-pgc-field="jasTabsJournals"> <span class="mdi mdi-book-multiple"></span> <span style="font-size: 11px;">Journals</span> </a><a class="align-items-center btn btn-link d-inline-flex flex-column justify-content-start px-1 py-0 text-decoration-none text-muted" href="../societies/all-societies.html" data-pgc-field="jasTabsSocieties"> <span class="mdi mdi-account-multiple"></span> <span style="font-size: 11px;">Societies</span> </a><a class="align-items-center btn btn-link d-inline-flex flex-column justify-content-start px-1 py-0 text-decoration-none" href="../search.html" data-pgc-field="jasTabsSearch"> <span class="mdi mdi-magnify"></span> <span style="font-size: 11px;">Search</span> </a><a class="align-items-center btn btn-link d-inline-flex flex-column justify-content-start px-1 py-0 text-decoration-none text-muted" href="../settings.html" data-pgc-field="jasTabsSettings"> <span class="mdi mdi-cog"></span> <span style="font-size: 11px;">Settings</span> </a> 
+                        <div class="btn-group w-100" role="group" aria-label="Basic example"> <a class="align-items-center btn btn-link d-inline-flex flex-column justify-content-start px-1 py-0 text-decoration-none text-muted" href="../articles/my-articles.html" data-pgc-field="jasTabsArticles"> <span class="mdi mdi-text-box-multiple"></span> <span style="font-size: 11px;">Articles</span> </a><a class="align-items-center btn btn-link d-inline-flex flex-column justify-content-start px-1 py-0 text-decoration-none text-muted" href="../journals/all-journals.html" data-pgc-field="jasTabsJournals"> <span class="mdi mdi-book-multiple"></span> <span style="font-size: 11px;">Journals</span> </a><a class="align-items-center btn btn-link d-inline-flex flex-column justify-content-start px-1 py-0 text-decoration-none text-muted" href="../societies/all-societies.html" data-pgc-field="jasTabsSocieties"> <span class="mdi mdi-account-multiple"></span> <span style="font-size: 11px;">Societies</span> </a><a class="align-items-center btn btn-link d-inline-flex flex-column justify-content-start px-1 py-0 text-decoration-none" href="../search.html" data-pgc-field="jasTabsSearch"> <span class="mdi mdi-magnify"></span> <span style="font-size: 11px;">Search</span> </a><a class="align-items-center btn btn-link d-inline-flex flex-column justify-content-start px-1 py-0 text-decoration-none text-muted" href="../settings.html" data-pgc-field="jasTabsSettings"> <span class="mdi mdi-cog"></span> <span style="font-size: 11px;">Settings</span> </a> 
                         </div>
                     </div>
                 </div>
