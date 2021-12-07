@@ -70,7 +70,27 @@
             </div>
         </header>
         <main class="min-vh-100 pb-tabs pt-nav-search">
-            <div data-pg-name="modals" data-pgc-optional="optionalModals" data-pgc-optional-restore>
+            <div data-pg-name="modals" data-pgc-optional="optionalModals" data-pgc-optional-restore data-pgc-edit="editableModals">
+                <div class="modal fade pg-show-modal" id="modalConfirm" tabindex="-1" role="dialog" aria-hidden="true"> 
+                    <div class="modal-dialog modal-sm"> 
+                        <div class="modal-content"> 
+                            <div class="modal-header"> 
+                                <h4 class="modal-title">Favorite all journals?</h4> 
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>                                 
+                            </div>                             
+
+                            <div class="modal-body"> 
+                                <p>Are you sure you want to favorite all <b>4</b> journals from this society?</p> 
+                            </div>                             
+
+                            <div class="modal-footer"> 
+                                <button type="button" class="btn btn-default" data-bs-dismiss="modal">Cancel</button>                                 
+
+                                <button type="button" class="btn btn-primary">Confirm</button>                                 
+                            </div>                             
+                        </div>                         
+                    </div>                     
+                </div>
                 <div class="fade modal" id="modalSort" tabindex="-1" role="dialog" aria-hidden="true" data-pgc-define="modalSort" data-pgc-define-name="modal-sort"> 
                     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-sm"> 
                         <div class="modal-content"> 
