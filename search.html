@@ -39,22 +39,56 @@
             <div data-pg-name="search" class="align-items-center d-flex h-search" data-pgc-field="jasSearch">
                 <div class="container">
                     <div class="input-group">
-                        <input type="search" class="form-control" placeholder="Enter search term" aria-label="search" aria-describedby="button-addon2" data-pgc-field="jasSearchInput"/><a class="btn btn-link text-decoration-none" id="button-addon2" href="search/results.html" data-pgc-field="jasSearchAction">Search</a>
+                        <input type="search" class="form-control" placeholder="Enter search term" aria-label="search" aria-describedby="button-addon2" data-pgc-field="jasSearchInput"/>
+                        <a class="btn btn-link text-decoration-none" id="button-addon2" href="search/results.html" data-pgc-field="jasSearchAction">Search</a>
                     </div>
                 </div>
             </div>
         </header>
         <main class="bg-light pb-tabs pt-nav-search">
-            <section class="bg-white border-bottom border-top mt-3">
+            <section class="my-3">
                 <div class="container">
-                    <div class="list-group list-group-flush"> <a class="align-items-center d-flex link-primary list-group-item px-0" href="#">Search in<span class="fw-normal me-2 ms-auto small text-muted">All journals</span><span class="mdi mdi-chevron-right"></span></a> 
+                    <h2 class="h6">Search filters</h2>
+                </div>
+                <div class="bg-white border-bottom border-top">
+                    <div class="container">
+                        <div class="list-group list-group-flush">
+                            <a class="align-items-center d-flex link-primary list-group-item px-0" href="#">Publication date<span class="fw-normal me-2 ms-auto small text-muted">All</span><span class="mdi mdi-chevron-right"></span></a> <a class="align-items-center d-flex link-primary list-group-item px-0" href="#">Search in<span class="fw-normal me-2 ms-auto small text-muted">All journals</span><span class="mdi mdi-chevron-right"></span></a> 
+                        </div>
                     </div>
                 </div>
             </section>
-            <section class="bg-white border-bottom border-top mt-3">
+            <section data-pg-name="search help" class="my-4">
                 <div class="container">
-                    <div class="list-group list-group-flush"> <a class="align-items-center d-flex link-primary list-group-item px-0" href="#">Publication date<span class="fw-normal me-2 ms-auto small text-muted">All</span><span class="mdi mdi-chevron-right"></span></a> 
-                    </div>
+                    <form> 
+                        <fieldset> 
+                            <legend class="h6">Search help</legend>                             
+                            <div class="mb-3"> 
+                                <label for="disabledTextInput" class="form-label">Exact match</label>                                 
+                                <input type="text" id="disabledTextInput" class="form-control form-control-sm w-auto" value="&quot;Blood pressure&quot;" readonly="readonly"/>
+                                <div id="emailHelp" class="form-text">Put phrase <b>inside quotes</b> for an exact match.
+                                </div>                                 
+                            </div>
+                            <div class="mb-3"> 
+                                <label for="disabledTextInput" class="form-label">Exclude keywords</label>                                 
+                                <input type="text" id="disabledTextInput" class="form-control form-control-sm w-auto" value="blood pressure -vessels" readonly="readonly"/>
+                                <div id="emailHelp" class="form-text">Prefix keywords with <b>minus (-)</b> to exclude results with those keywords.
+                                </div>                                 
+                            </div>
+                            <div class="mb-3"> 
+                                <label for="disabledTextInput" class="form-label">Includes both</label>                                 
+                                <input type="text" id="disabledTextInput" class="form-control form-control-sm w-auto" value="blood AND pressure" readonly="readonly"/>
+                                <div id="emailHelp" class="form-text">Separate phrases with <b>OR</b> (case sensitive) to search for multiple phrases in the same content.
+                                </div>                                 
+                            </div>
+                            <div class="mb-3"> 
+                                <label for="disabledTextInput" class="form-label">Combine searches</label>                                 
+                                <input type="text" id="disabledTextInput" class="form-control form-control-sm w-auto" value="blood OR pressure" readonly="readonly"/>
+                                <div id="emailHelp" class="form-text">Separate phrases with <b>AND</b> (case sensitive) to return results for either phrase.
+                                </div>                                 
+                            </div>                             
+                        </fieldset>                         
+                    </form>
                 </div>
             </section>
         </main>
@@ -62,7 +96,11 @@
             <div data-pg-name="actions" class="align-items-center d-flex h-tabs">
                 <div class="container px-0">
                     <div class="align-items-center d-flex">
-                        <div class="btn-group w-100" role="group" aria-label="Basic example"> <a class="align-items-center btn btn-link d-inline-flex flex-column justify-content-start px-1 py-0 text-decoration-none text-muted" href="articles/my-articles.html" data-pgc-field="jasTabsArticles"> <span class="mdi mdi-text-box-multiple"></span> <span style="font-size: 11px;">Articles</span> </a><a class="align-items-center btn btn-link d-inline-flex flex-column justify-content-start px-1 py-0 text-decoration-none text-muted" href="journals/all-journals.html" data-pgc-field="jasTabsJournals"> <span class="mdi mdi-book-multiple"></span> <span style="font-size: 11px;">Journals</span> </a><a class="align-items-center btn btn-link d-inline-flex flex-column justify-content-start px-1 py-0 text-decoration-none text-muted" href="societies/all-societies.html" data-pgc-field="jasTabsSocieties"> <span class="mdi mdi-account-multiple" data-pgc-field="optionalSocietyGeneralIcon"></span> <span style="font-size: 11px;">Societies</span> </a><a class="align-items-center btn btn-link d-inline-flex flex-column justify-content-start px-1 py-0 text-decoration-none" href="" data-pgc-field="jasTabsSearch"> <span class="mdi mdi-magnify"></span> <span style="font-size: 11px;">Search</span> </a><a class="align-items-center btn btn-link d-inline-flex flex-column justify-content-start px-1 py-0 text-decoration-none text-muted" href="settings.html" data-pgc-field="jasTabsSettings"> <span class="mdi mdi-cog"></span> <span style="font-size: 11px;">Settings</span> </a> 
+                        <div class="btn-group w-100" role="group" aria-label="Basic example"> <a class="align-items-center btn btn-link d-inline-flex flex-column justify-content-start px-1 py-0 text-decoration-none text-muted" href="articles/my-articles.html" data-pgc-field="jasTabsArticles"> <span class="mdi mdi-text-box-multiple"></span> <span style="font-size: 11px;">Articles</span> </a>
+                            <a class="align-items-center btn btn-link d-inline-flex flex-column justify-content-start px-1 py-0 text-decoration-none text-muted" href="journals/all-journals.html" data-pgc-field="jasTabsJournals"> <span class="mdi mdi-book-multiple"></span> <span style="font-size: 11px;">Journals</span> </a>
+                            <a class="align-items-center btn btn-link d-inline-flex flex-column justify-content-start px-1 py-0 text-decoration-none text-muted" href="societies/all-societies.html" data-pgc-field="jasTabsSocieties"> <span class="mdi mdi-account-multiple" data-pgc-field="optionalSocietyGeneralIcon"></span> <span style="font-size: 11px;">Societies</span> </a>
+                            <a class="align-items-center btn btn-link d-inline-flex flex-column justify-content-start px-1 py-0 text-decoration-none" href="" data-pgc-field="jasTabsSearch"> <span class="mdi mdi-magnify"></span> <span style="font-size: 11px;">Search</span> </a>
+                            <a class="align-items-center btn btn-link d-inline-flex flex-column justify-content-start px-1 py-0 text-decoration-none text-muted" href="settings.html" data-pgc-field="jasTabsSettings"> <span class="mdi mdi-cog"></span> <span style="font-size: 11px;">Settings</span> </a> 
                         </div>
                     </div>
                 </div>
