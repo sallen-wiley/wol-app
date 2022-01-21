@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html lang="en" data-pgc-master="basic.html">
-    <head>
-        <meta charset="utf-8"/>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover"/>
-        <meta name="apple-mobile-web-app-status-bar-style" content="default"/>
-        <meta name="apple-mobile-web-app-capable" content="yes"/>
-        <meta name="description" content=""/>
-        <meta name="author" content=""/>
-        <title>Blank Template for Bootstrap</title>
-        <meta name="theme-color" content="#fff" data-pgc-field="jasMetaTheme"/>
-        <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicons/apple-touch-icon.png"/>
-        <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicons/favicon-32x32.png"/>
-        <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicons/favicon-16x16.png"/>
-        <link rel="shortcut icon" href="../assets/favicons/favicon.ico"/>
-        <link rel="manifest" href="../manifest.json"/>
-        <!-- Bootstrap core CSS -->
-        <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
-        <!-- Custom styles for this template -->
-        <link href="../style.css" rel="stylesheet"/>
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,700,700italic,400italic,400&display=swap" rel="stylesheet" type="text/css"/>
-        <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,400italic,700,700italic&display=swap" rel="stylesheet" type="text/css"/>
-        <link href="https://cdn.jsdelivr.net/npm/@mdi/font@6.4.95/css/materialdesignicons.min.css" rel="stylesheet" type="text/css"/>
-    </head>
-    <body class="bg-light" data-pgc-field="jasBody">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="default"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <title>Blank Template for Bootstrap</title>
+    <meta name="theme-color" content="#fff" data-pgc-field="jasMetaTheme"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicons/apple-touch-icon.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicons/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicons/favicon-16x16.png"/>
+    <link rel="shortcut icon" href="../assets/favicons/favicon.ico"/>
+    <link rel="manifest" href="../manifest.json"/>
+    <!-- Bootstrap core CSS -->
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <!-- Custom styles for this template -->
+    <link href="../style.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,700,700italic,400italic,400&display=swap" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,400italic,700,700italic&display=swap" rel="stylesheet" type="text/css"/>
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@6.4.95/css/materialdesignicons.min.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body class="bg-light" data-pgc-field="jasBody"> 
         <header class="border-bottom fixed-top pt-safe-area" style="background-color: #ffffff;" data-pgc="jasHeader" data-pgc-field="jasNav"> 
             <div data-pg-name="navigation" class="align-items-center d-flex h-nav"> 
                 <div class="container"> 
@@ -33,22 +35,18 @@
                         <div class="btn-group btn-group-sm" role="group" aria-label="Basic example" data-pgc-field="jasNavTabsOptional"> <a class="active btn btn-outline-primary text-nowrap" href="#" data-pgc-field="jasNavTabsLeft">My Journals</a> <a class="btn btn-outline-primary text-nowrap" href="all-journals.html" data-pgc-field="jasNavTabsRight">All Journals</a> 
                         </div>                         
                          
-                        <div class="align-items-center d-flex justify-content-end w-50" data-pgc-field="jasNavRight">
-                            <button type="button" class="align-items-center btn btn-link d-inline-flex justify-content-center p-1" data-bs-target="#modalSort" data-bs-toggle="modal">
-                                <span class="mdi mdi-sort"></span>
-                            </button>
-                            <div class="dropdown">
-                                <button type="button" class="align-items-center btn btn-link d-inline-flex justify-content-center p-1" id="moreMenuDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <span class="mdi mdi-dots-vertical"></span>
-                                </button>
-                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="moreMenuDropdown">
-                                    <li>
-                                        <a class="align-items-center d-flex dropdown-item py-2" href="#"><span class="flex-grow-1">Unfavorite all journals</span><span class="mdi mdi-star-minus ms-5 text-primary"></span></a>
-                                    </li>
-                                    <li>
-                                        <a class="align-items-center d-flex dropdown-item py-2" href="#"><span class="flex-grow-1">Hide branding</span><span class="mdi mdi-image-off ms-5 text-primary"></span></a>
-                                    </li>
-                                </ul>
+                        <div class="align-items-center d-flex justify-content-end w-50" data-pgc-field="jasNavRight"> 
+                            <button type="button" class="align-items-center btn btn-link d-inline-flex justify-content-center p-1" data-bs-target="#modalSort" data-bs-toggle="modal"> <span class="mdi mdi-sort"></span> 
+                            </button>                             
+                            <div class="dropdown"> 
+                                <button type="button" class="align-items-center btn btn-link d-inline-flex justify-content-center p-1" id="moreMenuDropdown" data-bs-toggle="dropdown" aria-expanded="false"> <span class="mdi mdi-dots-vertical"></span> 
+                                </button>                                 
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="moreMenuDropdown"> 
+                                    <li> <a class="align-items-center d-flex dropdown-item py-2" href="#"><span class="flex-grow-1">Unfavorite all journals</span><span class="mdi mdi-star-minus ms-5 text-primary"></span></a> 
+                                    </li>                                     
+                                    <li> <a class="align-items-center d-flex dropdown-item py-2" href="#"><span class="flex-grow-1">Hide branding</span><span class="mdi mdi-image-off ms-5 text-primary"></span></a> 
+                                    </li>                                     
+                                </ul>                                 
                             </div>
                         </div>                         
                     </div>                     
@@ -62,78 +60,61 @@
                 </div>                 
             </div>             
                          
-        </header>
-        <main class="min-vh-100 pb-tabs pt-nav-search">
-            <section class="d-flex flex-column flex-grow-1 my-3">
-                <div>
-                    <div class="container">
-                        <h2 class="align-items-baseline d-flex h6 mb-1">Favorite Journals</h2>
-                        <p class="mb-1 small">Sorted by <b>Recently read</b></p>
-                    </div>
-                </div>
-                <div class="bg-white border-bottom border-top">
-                    <div class="container">
-                        <section>
+        </header>         
+        <main class="min-vh-100 pb-tabs pt-nav-search"> 
+            <section class="d-flex flex-column flex-grow-1 my-3"> 
+                <div> 
+                    <div class="container"> 
+                        <h2 class="align-items-baseline d-flex h6 mb-1">Favorite Journals</h2> 
+                        <p class="mb-1 small">Sorted by <b>Recently read</b></p> 
+                    </div>                     
+                </div>                 
+                <div class="bg-white border-bottom border-top"> 
+                    <div class="container"> 
+                        <section> 
                             <ul class="list-group list-group-flush"> 
-                                <li class="align-items-center d-flex list-group-item px-0">
-                                    <a href="" class="flex-grow-1 text-decoration-none"><img src="../assets/images/journal-branding/20462484.jpg" height="40px" style="max-height: 40px;" class="img-fluid"/></a>
-                                    <button type="button" class="active align-items-center btn btn-link d-flex justify-content-center text-decoration-none" data-bs-toggle="button" autocomplete="off">
-                                        <span class="mdi mdi-star show-when-active"></span>
-                                        <span class="mdi mdi-star-outline hide-when-active text-muted"></span>
-                                    </button>
-                                </li>
-                                <li class="align-items-center d-flex list-group-item px-0">
-                                    <a href="journal/home.html" class="flex-grow-1 text-decoration-none"><img src="../assets/images/journal-branding/15273350.jpg" height="40px" style="max-height: 40px;" class="img-fluid"/></a>
-                                    <button type="button" class="active align-items-center btn btn-link d-flex justify-content-center text-decoration-none" data-bs-toggle="button" autocomplete="off">
-                                        <span class="mdi mdi-star show-when-active"></span>
-                                        <span class="mdi mdi-star-outline hide-when-active text-muted"></span>
-                                    </button>
-                                </li>
-                                <li class="align-items-center d-flex list-group-item px-0">
-                                    <a href="" class="flex-grow-1 text-decoration-none"><img src="../assets/images/journal-branding/2471254x.jpg" height="40px" style="max-height: 40px;" class="img-fluid"/></a>
-                                    <button type="button" class="active align-items-center btn btn-link d-flex justify-content-center text-decoration-none" data-bs-toggle="button" autocomplete="off">
-                                        <span class="mdi mdi-star show-when-active"></span>
-                                        <span class="mdi mdi-star-outline hide-when-active text-muted"></span>
-                                    </button>
-                                </li>
-                                <li class="align-items-center d-flex list-group-item px-0">
-                                    <a href="" class="flex-grow-1 text-decoration-none"><img src="../assets/images/journal-branding/15276473.jpg" height="40px" style="max-height: 40px;" class="img-fluid"/></a>
-                                    <button type="button" class="active align-items-center btn btn-link d-flex justify-content-center text-decoration-none" data-bs-toggle="button" autocomplete="off">
-                                        <span class="mdi mdi-star show-when-active"></span>
-                                        <span class="mdi mdi-star-outline hide-when-active text-muted"></span>
-                                    </button>
-                                </li>
-                            </ul>
-                        </section>
-                    </div>
-                </div>
-            </section><section class="d-flex flex-column flex-grow-1 my-3">
-                <div>
-                    <div class="container">
-                        <h2 class="align-items-baseline d-flex h6 mb-1">Subscribed Journals</h2>
-                        <p class="mb-1 small">Sorted by <b>Recently read</b></p>
-                    </div>
-                </div>
-                <div class="bg-white border-bottom border-top">
-                    <div class="container">
-                        <section>
-                            <ul class="list-group list-group-flush"> 
-                                <li class="align-items-center d-flex list-group-item px-0">
-                                    <a href="" class="flex-grow-1 text-decoration-none"><img src="../assets/images/journal-branding/20462484.jpg" height="40px" style="max-height: 40px;" class="img-fluid"/></a>
-                                    
-                                </li>
-                                
-                                
-                                <li class="align-items-center d-flex list-group-item px-0">
-                                    <a href="" class="flex-grow-1 text-decoration-none"><img src="../assets/images/journal-branding/15276473.jpg" height="40px" style="max-height: 40px;" class="img-fluid"/></a>
-                                    
-                                </li>
-                            </ul>
-                        </section>
-                    </div>
-                </div>
+                                <li class="align-items-center d-flex list-group-item px-0"> <a href="" class="flex-grow-1 text-decoration-none"><img src="../assets/images/journal-branding/20462484.jpg" height="40px" style="max-height: 40px;" class="img-fluid"/></a> 
+                                    <button type="button" class="active align-items-center btn btn-link d-flex justify-content-center text-decoration-none" data-bs-toggle="button" autocomplete="off"> <span class="mdi mdi-star show-when-active"></span> <span class="mdi mdi-star-outline hide-when-active text-muted"></span> 
+                                    </button>                                     
+                                </li>                                 
+                                <li class="align-items-center d-flex list-group-item px-0"> <a href="journal/home.html" class="flex-grow-1 text-decoration-none"><img src="../assets/images/journal-branding/15273350.jpg" height="40px" style="max-height: 40px;" class="img-fluid"/></a> 
+                                    <button type="button" class="active align-items-center btn btn-link d-flex justify-content-center text-decoration-none" data-bs-toggle="button" autocomplete="off"> <span class="mdi mdi-star show-when-active"></span> <span class="mdi mdi-star-outline hide-when-active text-muted"></span> 
+                                    </button>                                     
+                                </li>                                 
+                                <li class="align-items-center d-flex list-group-item px-0"> <a href="" class="flex-grow-1 text-decoration-none"><img src="../assets/images/journal-branding/2471254x.jpg" height="40px" style="max-height: 40px;" class="img-fluid"/></a> 
+                                    <button type="button" class="active align-items-center btn btn-link d-flex justify-content-center text-decoration-none" data-bs-toggle="button" autocomplete="off"> <span class="mdi mdi-star show-when-active"></span> <span class="mdi mdi-star-outline hide-when-active text-muted"></span> 
+                                    </button>                                     
+                                </li>                                 
+                                <li class="align-items-center d-flex list-group-item px-0"> <a href="" class="flex-grow-1 text-decoration-none"><img src="../assets/images/journal-branding/15276473.jpg" height="40px" style="max-height: 40px;" class="img-fluid"/></a> 
+                                    <button type="button" class="active align-items-center btn btn-link d-flex justify-content-center text-decoration-none" data-bs-toggle="button" autocomplete="off"> <span class="mdi mdi-star show-when-active"></span> <span class="mdi mdi-star-outline hide-when-active text-muted"></span> 
+                                    </button>                                     
+                                </li>                                 
+                            </ul>                             
+                        </section>                         
+                    </div>                     
+                </div>                 
             </section>
-            <div data-pg-name="modals" data-pgc-field="optionalModals">
+            <section class="d-flex flex-column flex-grow-1 my-3"> 
+                <div> 
+                    <div class="container"> 
+                        <h2 class="align-items-baseline d-flex h6 mb-1">Subscribed Journals</h2> 
+                        <p class="mb-1 small">Sorted by <b>Recently read</b></p> 
+                    </div>                     
+                </div>                 
+                <div class="bg-white border-bottom border-top"> 
+                    <div class="container"> 
+                        <section> 
+                            <ul class="list-group list-group-flush"> 
+                                <li class="align-items-center d-flex list-group-item px-0"> <a href="" class="flex-grow-1 text-decoration-none"><img src="../assets/images/journal-branding/20462484.jpg" height="40px" style="max-height: 40px;" class="img-fluid"/></a> 
+                                </li>                                 
+                                <li class="align-items-center d-flex list-group-item px-0"> <a href="" class="flex-grow-1 text-decoration-none"><img src="../assets/images/journal-branding/15276473.jpg" height="40px" style="max-height: 40px;" class="img-fluid"/></a> 
+                                </li>                                 
+                            </ul>                             
+                        </section>                         
+                    </div>                     
+                </div>                 
+            </section>             
+            <div data-pg-name="modals" data-pgc-field="optionalModals"> 
                 <div class="fade modal pg-show-modal" id="modalSort" tabindex="-1" role="dialog" aria-hidden="true" data-pgc="modalSort"> 
                     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-sm"> 
                         <div class="modal-content"> 
@@ -149,9 +130,9 @@
                             </div>                             
                         </div>                         
                     </div>                     
-                </div>
-            </div>
-        </main>
+                </div>                 
+            </div>             
+        </main>         
         <footer class="backdrop-blur border-top fixed-bottom pb-safe-area" data-pgc="jasFooterTabs"> 
             <div data-pg-name="actions" class="align-items-center d-flex h-tabs"> 
                 <div class="container px-0"> 
@@ -161,15 +142,15 @@
                     </div>                     
                 </div>                 
             </div>             
-        </footer>
+        </footer>         
         <!-- Bootstrap core JavaScript
-    ================================================== -->
-        <!-- Placed at the end of the document so the pages load faster -->
-        <script src="../assets/js/popper.min.js"></script>
+    ================================================== -->         
+        <!-- Placed at the end of the document so the pages load faster -->         
+        <script src="../assets/js/popper.min.js"></script>         
         <script src="../bootstrap/js/bootstrap.min.js"></script>
     </body>
-</html>
-<!--[Pinegrow components saved data - this data is no longer used in the component. We're saving it just in case. Clear this with Components -> Clear saved unused edits]<div data-pg-name="modals" data-pgc-field="optionalModals">
+
+</html><!--[Pinegrow components saved data - this data is no longer used in the component. We're saving it just in case. Clear this with Components -> Clear saved unused edits]<div data-pg-name="modals" data-pgc-field="optionalModals"> 
                 <div class="fade modal pg-show-modal" id="modalSort" tabindex="-1" role="dialog" aria-hidden="true" data-pgc="modalSort"> 
                     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-sm"> 
                         <div class="modal-content"> 
@@ -178,29 +159,98 @@
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>                                 
                             </div>                             
                             <div class="bg-light modal-body"> 
-                                <section class="mb-2">
-                                    <div class="list-group list-group-flush rounded shadow-sm"> <a class="active d-flex list-group-item px-2" href="#" data-pgc-field="modalSortItemLabel">Recently read<span class="mdi mdi-check ms-auto show-when-active"></span></a><a class="d-flex list-group-item px-2" href="#" data-pgc-field="modalSortItemLabel">Alphabetically<span class="mdi mdi-check ms-auto show-when-active"></span></a> 
-                                    </div>
-                                </section>
+                                <section class="mb-2"> 
+                                    <div class="list-group list-group-flush rounded shadow-sm"> <a class="active d-flex list-group-item px-2" href="#" data-pgc-field="modalSortItemLabel">Recently read<span class="mdi mdi-check ms-auto show-when-active"></span></a>
+                                        <a class="d-flex list-group-item px-2" href="#" data-pgc-field="modalSortItemLabel">Alphabetically<span class="mdi mdi-check ms-auto show-when-active"></span></a> 
+                                    </div>                                     
+                                </section>                                 
                             </div>                             
                         </div>                         
                     </div>                     
-                </div>
-            </div><div data-pg-name="modals" data-pgc-field="optionalModals">
-                <div class="fade modal" id="modalSort" tabindex="-1" role="dialog" aria-hidden="true" data-pgc="modalSort"> 
-                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-sm"> 
-                        <div class="modal-content"> 
-                            <div class="bg-light border-bottom-0 modal-header"> 
-                                <h4 class="modal-title">Sort by</h4> 
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>                                 
-                            </div>                             
-                            <div class="bg-light modal-body"> 
-                                <section class="mb-2">
-                                    <div class="list-group list-group-flush rounded shadow-sm"> <a class="active d-flex list-group-item px-2" href="#" data-pgc-field="modalSortItemLabel">Recently read<span class="mdi mdi-check ms-auto show-when-active"></span></a><a class="d-flex list-group-item px-2" href="#" data-pgc-field="modalSortItemLabel">Alphabetically<span class="mdi mdi-check ms-auto show-when-active"></span></a> 
-                                    </div>
-                                </section>
-                            </div>                             
+                </div>                 
+            </div><div data-pg-name="modals" data-pgc-field="optionalModals"> 
+    <div class="fade modal pg-show-modal" id="modalSort" tabindex="-1" role="dialog" aria-hidden="true" data-pgc="modalSort"> 
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-sm"> 
+            <div class="modal-content"> 
+                <div class="bg-light border-bottom-0 modal-header"> 
+                    <h4 class="modal-title">Sort by</h4> 
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>                     
+                </div>                 
+                <div class="bg-light modal-body"> 
+                    <section class="mb-2"> 
+                        <div class="list-group list-group-flush rounded shadow-sm"> <a class="active d-flex list-group-item px-2" href="#" data-pgc-field="modalSortItemLabel">Recently read<span class="mdi mdi-check ms-auto show-when-active"></span></a><a class="d-flex list-group-item px-2" href="#" data-pgc-field="modalSortItemLabel">Alphabetically<span class="mdi mdi-check ms-auto show-when-active"></span></a> 
                         </div>                         
-                    </div>                     
-                </div>
-            </div>-->
+                    </section>                     
+                </div>                 
+            </div>             
+        </div>         
+    </div>     
+</div><div data-pg-name="modals" data-pgc-field="optionalModals"> 
+    <div class="fade modal pg-show-modal" id="modalSort" tabindex="-1" role="dialog" aria-hidden="true" data-pgc="modalSort"> 
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-sm"> 
+            <div class="modal-content"> 
+                <div class="bg-light border-bottom-0 modal-header"> 
+                    <h4 class="modal-title">Sort by</h4> 
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>                     
+                </div>                 
+                <div class="bg-light modal-body"> 
+                    <section class="mb-2"> 
+                        <div class="list-group list-group-flush rounded shadow-sm"> <a class="active d-flex list-group-item px-2" href="#" data-pgc-field="modalSortItemLabel">Recently read<span class="mdi mdi-check ms-auto show-when-active"></span></a><a class="d-flex list-group-item px-2" href="#" data-pgc-field="modalSortItemLabel">Alphabetically<span class="mdi mdi-check ms-auto show-when-active"></span></a> 
+                        </div>                         
+                    </section>                     
+                </div>                 
+            </div>             
+        </div>         
+    </div>     
+</div><div data-pg-name="modals" data-pgc-field="optionalModals"> 
+    <div class="fade modal pg-show-modal" id="modalSort" tabindex="-1" role="dialog" aria-hidden="true" data-pgc="modalSort"> 
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-sm"> 
+            <div class="modal-content"> 
+                <div class="bg-light border-bottom-0 modal-header"> 
+                    <h4 class="modal-title">Sort by</h4> 
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>                     
+                </div>                 
+                <div class="bg-light modal-body"> 
+                    <section class="mb-2"> 
+                        <div class="list-group list-group-flush rounded shadow-sm"> <a class="active d-flex list-group-item px-2" href="#" data-pgc-field="modalSortItemLabel">Recently read<span class="mdi mdi-check ms-auto show-when-active"></span></a><a class="d-flex list-group-item px-2" href="#" data-pgc-field="modalSortItemLabel">Alphabetically<span class="mdi mdi-check ms-auto show-when-active"></span></a> 
+                        </div>                         
+                    </section>                     
+                </div>                 
+            </div>             
+        </div>         
+    </div>     
+</div><div data-pg-name="modals" data-pgc-field="optionalModals"> 
+    <div class="fade modal pg-show-modal" id="modalSort" tabindex="-1" role="dialog" aria-hidden="true" data-pgc="modalSort"> 
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-sm"> 
+            <div class="modal-content"> 
+                <div class="bg-light border-bottom-0 modal-header"> 
+                    <h4 class="modal-title">Sort by</h4> 
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>                     
+                </div>                 
+                <div class="bg-light modal-body"> 
+                    <section class="mb-2"> 
+                        <div class="list-group list-group-flush rounded shadow-sm"> <a class="active d-flex list-group-item px-2" href="#" data-pgc-field="modalSortItemLabel">Recently read<span class="mdi mdi-check ms-auto show-when-active"></span></a><a class="d-flex list-group-item px-2" href="#" data-pgc-field="modalSortItemLabel">Alphabetically<span class="mdi mdi-check ms-auto show-when-active"></span></a> 
+                        </div>                         
+                    </section>                     
+                </div>                 
+            </div>             
+        </div>         
+    </div>     
+</div><div data-pg-name="modals" data-pgc-field="optionalModals"> 
+    <div class="fade modal" id="modalSort" tabindex="-1" role="dialog" aria-hidden="true" data-pgc="modalSort"> 
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-sm"> 
+            <div class="modal-content"> 
+                <div class="bg-light border-bottom-0 modal-header"> 
+                    <h4 class="modal-title">Sort by</h4> 
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>                     
+                </div>                 
+                <div class="bg-light modal-body"> 
+                    <section class="mb-2"> 
+                        <div class="list-group list-group-flush rounded shadow-sm"> <a class="active d-flex list-group-item px-2" href="#" data-pgc-field="modalSortItemLabel">Recently read<span class="mdi mdi-check ms-auto show-when-active"></span></a><a class="d-flex list-group-item px-2" href="#" data-pgc-field="modalSortItemLabel">Alphabetically<span class="mdi mdi-check ms-auto show-when-active"></span></a> 
+                        </div>                         
+                    </section>                     
+                </div>                 
+            </div>             
+        </div>         
+    </div>     
+</div>-->
