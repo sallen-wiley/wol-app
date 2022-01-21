@@ -1,222 +1,161 @@
 <!DOCTYPE html>
 <html lang="en" data-pgc-master="basic.html">
-    <head>
-        <meta charset="utf-8"/>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover"/>
-        <meta name="apple-mobile-web-app-status-bar-style" content="default"/>
-        <meta name="apple-mobile-web-app-capable" content="yes"/>
-        <meta name="description" content=""/>
-        <meta name="author" content=""/>
-        <title>Blank Template for Bootstrap</title>
-        <meta name="theme-color" content="#fff" data-pgc-field="jasMetaTheme"/>
-        <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicons/apple-touch-icon.png"/>
-        <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicons/favicon-32x32.png"/>
-        <link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicons/favicon-16x16.png"/>
-        <link rel="shortcut icon" href="../../assets/favicons/favicon.ico"/>
-        <link rel="manifest" href="../../manifest.json"/>
-        <!-- Bootstrap core CSS -->
-        <link href="../../bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
-        <!-- Custom styles for this template -->
-        <link href="../../style.css" rel="stylesheet"/>
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,700,700italic,400italic,400&display=swap" rel="stylesheet" type="text/css"/>
-        <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,400italic,700,700italic&display=swap" rel="stylesheet" type="text/css"/>
-        <link href="https://cdn.jsdelivr.net/npm/@mdi/font@6.4.95/css/materialdesignicons.min.css" rel="stylesheet" type="text/css"/>
-    </head>
-    <body class="bg-light" data-pgc-field="jasBody">
-        <header class="border-bottom fixed-top pt-safe-area" style="background-color: #ffffff;" data-pgc="jasHeader" data-pgc-field="jasNav">
-            <div data-pg-name="navigation" class="align-items-center d-flex h-nav">
-                <div class="container">
-                    <div class="align-items-center d-flex justify-content-center">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="default"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <title>Blank Template for Bootstrap</title>
+    <meta name="theme-color" content="#fff" data-pgc-field="jasMetaTheme"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicons/apple-touch-icon.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicons/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicons/favicon-16x16.png"/>
+    <link rel="shortcut icon" href="../../assets/favicons/favicon.ico"/>
+    <link rel="manifest" href="../../manifest.json"/>
+    <!-- Bootstrap core CSS -->
+    <link href="../../bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <!-- Custom styles for this template -->
+    <link href="../../style.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,700,700italic,400italic,400&display=swap" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,400italic,700,700italic&display=swap" rel="stylesheet" type="text/css"/>
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@6.4.95/css/materialdesignicons.min.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body class="bg-light" data-pgc-field="jasBody">
+        <header class="border-bottom fixed-top pt-safe-area" style="background-color: #ffffff;" data-pgc="jasHeader" data-pgc-field="jasNav"> 
+            <div data-pg-name="navigation" class="align-items-center d-flex h-nav"> 
+                <div class="container"> 
+                    <div class="align-items-center d-flex justify-content-center"> 
                         <div class="d-flex justify-content-start w-50" data-pgc-field="jasNavLeft">
-                            
-                        </div>
-                        
-                        <h1 class="h5 mb-0 text-center text-nowrap text-truncate w-100" data-pgc-field="jasNavTitle"><img src="../../assets/images/society-branding/aasld.png" height="24px"/></h1>
+
+                    </div>                         
+                                                 
+                        <h1 class="h5 mb-0 text-center text-nowrap text-truncate w-100" data-pgc-field="jasNavTitle"><img src="../../assets/images/society-branding/aasld.png" height="24px"/></h1> 
                         <div class="align-items-center d-flex justify-content-end w-50" data-pgc-field="jasNavRight">
                             <button type="button" class="align-items-center btn btn-link d-flex justify-content-center p-1 text-decoration-none" data-bs-toggle="button" autocomplete="off"><span class="mdi mdi-star show-when-active"></span><span class="hide-when-active mdi mdi-star-outline text-muted"></span>
-                            </button>
+                        </button>
                             <div class="dropdown">
                                 <button type="button" class="align-items-center btn btn-link d-inline-flex justify-content-center p-1" id="moreMenuDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <span class="mdi mdi-dots-vertical"></span>
-                                </button>
+                                <span class="mdi mdi-dots-vertical"></span>
+                            </button>
                                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="moreMenuDropdown">
-                                    <li>
-                                        <a class="align-items-center d-flex dropdown-item py-2" href="#" data-bs-target="#modalConfirm" data-bs-toggle="modal"><span class="flex-grow-1">Favorite all journals</span><span class="mdi mdi-star-plus ms-5 text-primary"></span></a>
-                                    </li>
-                                    <li>
-                                        <a class="align-items-center d-flex dropdown-item py-2" href="#"><span class="flex-grow-1">Hide branding</span><span class="mdi mdi-image-off ms-5 text-primary"></span></a>
-                                    </li><li>
-                                        <a class="align-items-center d-flex dropdown-item py-2" href="Javascript:;" data-bs-target="#modal-disableFocus" data-bs-toggle="modal"><span class="flex-grow-1">Disable focus</span><span class="mdi mdi-star-off-outline ms-5 text-primary"></span></a>
-                                    </li>
-                                </ul>
+                                <li>
+                                    <a class="align-items-center d-flex dropdown-item py-2" href="#" data-bs-target="#modalConfirm" data-bs-toggle="modal"><span class="flex-grow-1">Favorite all journals</span><span class="mdi mdi-star-plus ms-5 text-primary"></span></a>
+                                </li>
+                                <li>
+                                    <a class="align-items-center d-flex dropdown-item py-2" href="#"><span class="flex-grow-1">Hide branding</span><span class="mdi mdi-image-off ms-5 text-primary"></span></a>
+                                </li>
+                                <li>
+                                    <a class="align-items-center d-flex dropdown-item py-2" href="Javascript:;" data-bs-target="#modal-disableFocus" data-bs-toggle="modal"><span class="flex-grow-1">Disable focus</span><span class="mdi mdi-star-off-outline ms-5 text-primary"></span></a>
+                                </li>
+                            </ul>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div data-pg-name="search" class="align-items-center d-flex h-search" data-pgc-field="jasSearch">
+                        </div>                         
+                    </div>                     
+                </div>                 
+            </div>             
+            <div data-pg-name="search" class="align-items-center d-flex h-search" data-pgc-field="jasSearch"> 
                 <div class="container">
-                    <div class="input-group">
-                        <input type="search" class="form-control" placeholder="Search for journals" aria-label="search" aria-describedby="button-addon2" data-pgc-field="jasSearchInput"/>
-                        
-                    </div>
+                <div class="input-group">
+                    <input type="search" class="form-control" placeholder="Search for journals" aria-label="search" aria-describedby="button-addon2" data-pgc-field="jasSearchInput"/>
                 </div>
-            </div>
-            
+            </div>                 
+            </div>             
+                         
         </header>
         <main class="min-vh-100 pb-tabs pt-nav-search">
             <section class="d-flex flex-column flex-grow-1 my-3">
                 <div class="bg-white border-bottom border-top">
                     <div class="container">
                         <section>
-                            <ul class="list-group list-group-flush"> 
-                                <li class="list-group-item px-0">
-                                    <a href="home-favorite-all.html" class="align-items-center d-flex flex-grow-1 text-decoration-none"><span class="flex-grow-1">Trigger society favorite experience</span><span class="mdi mdi-chevron-right ms-2"></span></a>
-                                </li>
-                                <li class="list-group-item px-0">
-                                    <a href="" class="align-items-center d-flex flex-grow-1 text-decoration-none"><span class="flex-grow-1">About AASLD</span><span class="mdi mdi-chevron-right ms-2"></span></a>
-                                </li>
-                                <li class="list-group-item px-0">
-                                    <a href="" class="align-items-center d-flex flex-grow-1 text-decoration-none"><span class="flex-grow-1">AASLD News</span><span class="mdi mdi-chevron-right ms-2"></span></a>
-                                </li>
-                                <li class="list-group-item px-0">
-                                    <a href="" class="align-items-center d-flex flex-grow-1 text-decoration-none"><span class="flex-grow-1">AASLD.org</span><span class="mdi mdi-chevron-right ms-2"></span></a>
-                                </li>
-                            </ul>
+                            <ul class="list-group list-group-flush">
+                            <li class="list-group-item px-0">
+                                <a href="home-favorite-all.html" class="align-items-center d-flex flex-grow-1 text-decoration-none"><span class="flex-grow-1">Trigger society favorite experience</span><span class="mdi mdi-chevron-right ms-2"></span></a>
+                            </li>
+                            <li class="list-group-item px-0">
+                                <a href="" class="align-items-center d-flex flex-grow-1 text-decoration-none"><span class="flex-grow-1">About AASLD</span><span class="mdi mdi-chevron-right ms-2"></span></a>
+                            </li>
+                            <li class="list-group-item px-0">
+                                <a href="" class="align-items-center d-flex flex-grow-1 text-decoration-none"><span class="flex-grow-1">AASLD News</span><span class="mdi mdi-chevron-right ms-2"></span></a>
+                            </li>
+                            <li class="list-group-item px-0">
+                                <a href="" class="align-items-center d-flex flex-grow-1 text-decoration-none"><span class="flex-grow-1">AASLD.org</span><span class="mdi mdi-chevron-right ms-2"></span></a>
+                            </li>
+                        </ul>
                         </section>
                     </div>
                 </div>
             </section>
             <section class="d-flex flex-column flex-grow-1 my-3">
                 <div>
-                    <div class="container">
-                        <h2 class="align-items-baseline d-flex h6 mb-1">Browse journals</h2>
-                        <p class="mb-1 small">Journals from AASLD</p>
-                    </div>
+                <div class="container">
+                    <h2 class="align-items-baseline d-flex h6 mb-1">Browse journals</h2>
+                    <p class="mb-1 small">Journals from AASLD</p>
                 </div>
+            </div>
                 <div class="bg-white border-bottom border-top">
                     <div class="container">
                         <section>
                             <ul class="list-group list-group-flush"> 
                                 <li class="align-items-center d-flex list-group-item px-0">
-                                    <a href="" class="flex-grow-1 text-decoration-none"><img src="../../assets/images/journal-branding/20462484.jpg" class="img-fluid" style="max-height: 40px;"/></a>
-                                    <button type="button" class="align-items-center btn btn-link d-flex justify-content-center text-decoration-none" data-bs-toggle="button" autocomplete="off">
-                                        <span class="mdi mdi-star show-when-active"></span>
-                                        <span class="mdi mdi-star-outline hide-when-active text-muted"></span>
-                                    </button>
-                                </li>
+                                <a href="" class="flex-grow-1 text-decoration-none"><img src="../../assets/images/journal-branding/20462484.jpg" class="img-fluid" style="max-height: 40px;"/></a>
+                                <button type="button" class="align-items-center btn btn-link d-flex justify-content-center text-decoration-none" data-bs-toggle="button" autocomplete="off">
+                                    <span class="mdi mdi-star show-when-active"></span>
+                                    <span class="mdi mdi-star-outline hide-when-active text-muted"></span>
+                                </button>
+                            </li>
                                 <li class="align-items-center d-flex list-group-item px-0">
-                                    <a href="../../journals/journal/issues.html" class="flex-grow-1 text-decoration-none"><img src="../../assets/images/journal-branding/15273350.jpg" class="img-fluid" style="max-height: 40px;"/></a>
-                                    <button type="button" class="align-items-center btn btn-link d-flex justify-content-center text-decoration-none" data-bs-toggle="button" autocomplete="off">
-                                        <span class="mdi mdi-star show-when-active"></span>
-                                        <span class="mdi mdi-star-outline hide-when-active text-muted"></span>
-                                    </button>
-                                </li>
+                                <a href="../../journals/journal/issues.html" class="flex-grow-1 text-decoration-none"><img src="../../assets/images/journal-branding/15273350.jpg" class="img-fluid" style="max-height: 40px;"/></a>
+                                <button type="button" class="align-items-center btn btn-link d-flex justify-content-center text-decoration-none" data-bs-toggle="button" autocomplete="off">
+                                    <span class="mdi mdi-star show-when-active"></span>
+                                    <span class="mdi mdi-star-outline hide-when-active text-muted"></span>
+                                </button>
+                            </li>
                                 <li class="align-items-center d-flex list-group-item px-0">
-                                    <a href="" class="flex-grow-1 text-decoration-none"><img src="../../assets/images/journal-branding/2471254x.jpg" class="img-fluid" style="max-height: 40px;"/></a>
-                                    <button type="button" class="align-items-center btn btn-link d-flex justify-content-center text-decoration-none" data-bs-toggle="button" autocomplete="off">
-                                        <span class="mdi mdi-star show-when-active"></span>
-                                        <span class="mdi mdi-star-outline hide-when-active text-muted"></span>
-                                    </button>
-                                </li>
+                                <a href="" class="flex-grow-1 text-decoration-none"><img src="../../assets/images/journal-branding/2471254x.jpg" class="img-fluid" style="max-height: 40px;"/></a>
+                                <button type="button" class="align-items-center btn btn-link d-flex justify-content-center text-decoration-none" data-bs-toggle="button" autocomplete="off">
+                                    <span class="mdi mdi-star show-when-active"></span>
+                                    <span class="mdi mdi-star-outline hide-when-active text-muted"></span>
+                                </button>
+                            </li>
                                 <li class="align-items-center d-flex list-group-item px-0">
-                                    <a href="" class="flex-grow-1 text-decoration-none"><img src="../../assets/images/journal-branding/15276473.jpg" class="img-fluid" style="max-height: 40px;"/></a>
-                                    <button type="button" class="align-items-center btn btn-link d-flex justify-content-center text-decoration-none" data-bs-toggle="button" autocomplete="off">
-                                        <span class="mdi mdi-star show-when-active"></span>
-                                        <span class="mdi mdi-star-outline hide-when-active text-muted"></span>
-                                    </button>
-                                </li>
+                                <a href="" class="flex-grow-1 text-decoration-none"><img src="../../assets/images/journal-branding/15276473.jpg" class="img-fluid" style="max-height: 40px;"/></a>
+                                <button type="button" class="align-items-center btn btn-link d-flex justify-content-center text-decoration-none" data-bs-toggle="button" autocomplete="off">
+                                    <span class="mdi mdi-star show-when-active"></span>
+                                    <span class="mdi mdi-star-outline hide-when-active text-muted"></span>
+                                </button>
+                            </li>
                             </ul>
                         </section>
                     </div>
                 </div>
             </section>
             <div data-pg-name="modals" data-pgc-field="editableModals">
-                <div class="fade modal" id="modal-disableFocus" tabindex="-1" role="dialog" aria-hidden="true"> 
-                    <div class="modal-dialog modal-dialog-centered"> 
-                        <div class="modal-content"> 
-                            <div class="modal-header"> 
-                                <h4 class="modal-title">Disable focus?</h4> 
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>                                 
-                            </div>                             
 
-                            <div class="modal-body"> 
-                                <p>You can renable focus for this society at any time from the society&apos;s homepage or settings.</p> 
-                            </div>                             
 
-                            <div class="modal-footer"> 
-                                <button type="button" class="btn btn-default" data-bs-dismiss="modal">Cancel</button>                                 
 
-                                <a class="btn btn-primary" href="home.html">Disable focus</a>                                 
-                            </div>                             
-                        </div>                         
-                    </div>                     
-                </div><div class="modal fade" id="modalConfirmOneClick" tabindex="-1" role="dialog" aria-hidden="true"> 
-                    <div class="modal-dialog modal-dialog-centered modal-sm"> 
-                        <div class="modal-content"> 
-                            <div class="modal-header"> 
-                                <h4 class="modal-title">Favorite all?</h4> 
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>                                 
-                            </div>                             
-                            <div class="modal-body"> 
-                                <p>You are about to add this society and their journals to your favorites.</p> 
-                            </div>                             
-                            <div class="modal-footer"> 
-                                <button type="button" class="btn btn-default" data-bs-dismiss="modal">Cancel</button>                                 
-                                <button type="button" class="btn btn-primary">Confirm</button>                                 
-                            </div>                             
-                        </div>                         
-                    </div>                     
-                </div>
-                <div class="modal fade" id="modalConfirm" tabindex="-1" role="dialog" aria-hidden="true"> 
-                    <div class="modal-dialog modal-dialog-centered modal-sm"> 
-                        <div class="modal-content"> 
-                            <div class="modal-header"> 
-                                <h4 class="modal-title">Favorite all journals?</h4> 
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>                                 
-                            </div>                             
-                            <div class="modal-body"> 
-                                <p>You are about to add all&nbsp;<b>4</b> journals from <b>American Association for the Study of Liver Diseases</b> to your favorites.</p> 
-                            </div>                             
-                            <div class="modal-footer"> 
-                                <button type="button" class="btn btn-default" data-bs-dismiss="modal">Cancel</button>                                 
-                                <button type="button" class="btn btn-primary">Confirm</button>                                 
-                            </div>                             
-                        </div>                         
-                    </div>                     
-                </div>
-                <div class="fade modal" id="modalSort" tabindex="-1" role="dialog" aria-hidden="true" data-pgc="modalSort"> 
-                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-sm"> 
-                        <div class="modal-content"> 
-                            <div class="bg-light border-bottom-0 modal-header"> 
-                                <h4 class="modal-title">Sort by</h4> 
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>                                 
-                            </div>                             
-                            <div class="bg-light modal-body"> 
-                                <section class="mb-2">
-                                    <div class="list-group list-group-flush rounded shadow-sm"> <a class="active d-flex list-group-item px-2" href="#" data-pgc-field="modalSortItemLabel">Most relevant<span class="mdi mdi-check ms-auto show-when-active"></span></a> 
-                                    </div>
-                                </section>
-                            </div>                             
-                        </div>                         
-                    </div>                     
-                </div>
-            </div>
+        </div>
         </main>
-        <footer class="backdrop-blur border-top fixed-bottom pb-safe-area" data-pgc="jasFooterTabs">
-            <div data-pg-name="actions" class="align-items-center d-flex h-tabs">
-                <div class="container px-0">
-                    <div class="align-items-center d-flex">
-                        <div class="btn-group w-100" role="group" aria-label="Basic example"> <a class="align-items-center btn btn-link d-inline-flex flex-column justify-content-start px-1 py-0 text-decoration-none text-muted" href="../../articles/my-articles-focus.html" data-pgc-field="jasTabsArticles"> <span class="mdi mdi-text-box-multiple"></span> <span style="font-size: 11px;">Articles</span> </a>
-                            <a class="align-items-center btn btn-link d-inline-flex flex-column justify-content-start px-1 py-0 text-decoration-none text-muted" href="../../journals/all-journals.html" data-pgc-field="jasTabsJournals"> <span class="mdi mdi-book-multiple"></span> <span style="font-size: 11px;">Journals</span> </a>
-                            <a class="align-items-center btn btn-link d-inline-flex flex-column justify-content-start px-1 py-0 text-decoration-none" href="../all-societies.html" data-pgc-field="jasTabsSocieties"> <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 172.633 128.645" preserveAspectRatio width="24px" height="24px" data-pgc-field="editableSocietyTabIcon"><path d="M8.933,9.129s169.2,12.3,91.4,75c0,0,44.3-35.3,71.9-62.7C166.433-18.071,8.933,9.129,8.933,9.129Z" fill="#304837"/><path d="M172.633,21.229S.133,99.429.133,49.429c0,0,.9,40,9.2,76.4C40.933,149.029,172.633,21.229,172.633,21.229Z" fill="#d9893a"/><path d="M8.933,126.129s0-123.2,97-125.9c0,0-38.3-1-97,8.8C-11.167,21.529,8.933,126.129,8.933,126.129Z" fill="#396045"/></svg> <span style="font-size: 11px;" data-pgc-field="editableSocietyBtnLabel">AASLD</span> </a>
-                            <a class="align-items-center btn btn-link d-inline-flex flex-column justify-content-start px-1 py-0 text-decoration-none text-muted" href="../../search.html" data-pgc-field="jasTabsSearch"> <span class="mdi mdi-magnify"></span> <span style="font-size: 11px;">Search</span> </a>
-                            <a class="align-items-center btn btn-link d-inline-flex flex-column justify-content-start px-1 py-0 text-decoration-none text-muted" href="../../settings.html" data-pgc-field="jasTabsSettings"> <span class="mdi mdi-cog"></span> <span style="font-size: 11px;">Settings</span> </a> 
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <footer class="backdrop-blur border-top fixed-bottom pb-safe-area" data-pgc="jasFooterTabs"> 
+            <div data-pg-name="actions" class="align-items-center d-flex h-tabs"> 
+                <div class="container px-0"> 
+                    <div class="align-items-center d-flex"> 
+                        <div class="btn-group w-100" role="group" aria-label="Basic example"> <a class="align-items-center btn btn-link d-inline-flex flex-column justify-content-start px-1 py-0 text-decoration-none text-muted" href="../../articles/my-articles-focus.html" data-pgc-field="jasTabsArticles"> <span class="mdi mdi-text-box-multiple"></span> <span style="font-size: 11px;">Articles</span>
+                        </a> <a class="align-items-center btn btn-link d-inline-flex flex-column justify-content-start px-1 py-0 text-decoration-none text-muted" href="../../journals/all-journals.html" data-pgc-field="jasTabsJournals"> <span class="mdi mdi-book-multiple"></span> <span style="font-size: 11px;">Journals</span>
+                        </a> <a class="align-items-center btn btn-link d-inline-flex flex-column justify-content-start px-1 py-0 text-decoration-none" href="../all-societies.html" data-pgc-field="jasTabsSocieties"> <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 172.633 128.645" preserveAspectRatio width="24px" height="24px" data-pgc-field="editableSocietyTabIcon">
+                                <path d="M8.933,9.129s169.2,12.3,91.4,75c0,0,44.3-35.3,71.9-62.7C166.433-18.071,8.933,9.129,8.933,9.129Z" fill="#304837"/>
+                                <path d="M172.633,21.229S.133,99.429.133,49.429c0,0,.9,40,9.2,76.4C40.933,149.029,172.633,21.229,172.633,21.229Z" fill="#d9893a"/>
+                                <path d="M8.933,126.129s0-123.2,97-125.9c0,0-38.3-1-97,8.8C-11.167,21.529,8.933,126.129,8.933,126.129Z" fill="#396045"/>
+                            </svg> <span style="font-size: 11px;" data-pgc-field="editableSocietyBtnLabel">AASLD</span>
+                        </a> <a class="align-items-center btn btn-link d-inline-flex flex-column justify-content-start px-1 py-0 text-decoration-none text-muted" href="../../search.html" data-pgc-field="jasTabsSearch"> <span class="mdi mdi-magnify"></span> <span style="font-size: 11px;">Search</span> </a> <a class="align-items-center btn btn-link d-inline-flex flex-column justify-content-start px-1 py-0 text-decoration-none text-muted" href="../../settings.html" data-pgc-field="jasTabsSettings"> <span class="mdi mdi-cog"></span> <span style="font-size: 11px;">Settings</span> </a> 
+                        </div>                         
+                    </div>                     
+                </div>                 
+            </div>             
         </footer>
         <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -224,4 +163,5 @@
         <script src="../../assets/js/popper.min.js"></script>
         <script src="../../bootstrap/js/bootstrap.min.js"></script>
     </body>
+
 </html>

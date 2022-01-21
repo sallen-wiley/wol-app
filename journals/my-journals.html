@@ -24,15 +24,15 @@
         <link href="https://cdn.jsdelivr.net/npm/@mdi/font@6.4.95/css/materialdesignicons.min.css" rel="stylesheet" type="text/css"/>
     </head>
     <body class="bg-light" data-pgc-field="jasBody">
-        <header class="border-bottom fixed-top pt-safe-area" style="background-color: #ffffff;" data-pgc="jasHeader" data-pgc-field="jasNav">
-            <div data-pg-name="navigation" class="align-items-center d-flex h-nav">
-                <div class="container">
-                    <div class="align-items-center d-flex justify-content-center">
+        <header class="border-bottom fixed-top pt-safe-area" style="background-color: #ffffff;" data-pgc="jasHeader" data-pgc-field="jasNav"> 
+            <div data-pg-name="navigation" class="align-items-center d-flex h-nav"> 
+                <div class="container"> 
+                    <div class="align-items-center d-flex justify-content-center"> 
                         <div class="d-flex justify-content-start w-50" data-pgc-field="jasNavLeft">
-</div>
+</div>                         
                         <div class="btn-group btn-group-sm" role="group" aria-label="Basic example" data-pgc-field="jasNavTabsOptional"> <a class="active btn btn-outline-primary text-nowrap" href="#" data-pgc-field="jasNavTabsLeft">My Journals</a> <a class="btn btn-outline-primary text-nowrap" href="all-journals.html" data-pgc-field="jasNavTabsRight">All Journals</a> 
-                        </div>
-                        
+                        </div>                         
+                         
                         <div class="align-items-center d-flex justify-content-end w-50" data-pgc-field="jasNavRight">
                             <button type="button" class="align-items-center btn btn-link d-inline-flex justify-content-center p-1" data-bs-target="#modalSort" data-bs-toggle="modal">
                                 <span class="mdi mdi-sort"></span>
@@ -50,19 +50,18 @@
                                     </li>
                                 </ul>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div data-pg-name="search" class="align-items-center d-flex h-search" data-pgc-field="jasSearch">
-                <div class="container">
-                    <div class="input-group">
-                        <input type="search" class="form-control" placeholder="Search your favorite journals" aria-label="search" aria-describedby="button-addon2" data-pgc-field="jasSearchInput"/>
-                        
-                    </div>
-                </div>
-            </div>
-            
+                        </div>                         
+                    </div>                     
+                </div>                 
+            </div>             
+            <div data-pg-name="search" class="align-items-center d-flex h-search" data-pgc-field="jasSearch"> 
+                <div class="container"> 
+                    <div class="input-group"> 
+                        <input type="search" class="form-control" placeholder="Search your favorite journals" aria-label="search" aria-describedby="button-addon2" data-pgc-field="jasSearchInput"/>  
+                    </div>                     
+                </div>                 
+            </div>             
+                         
         </header>
         <main class="min-vh-100 pb-tabs pt-nav-search">
             <section class="d-flex flex-column flex-grow-1 my-3">
@@ -135,7 +134,7 @@
                 </div>
             </section>
             <div data-pg-name="modals" data-pgc-field="optionalModals">
-                <div class="fade modal" id="modalSort" tabindex="-1" role="dialog" aria-hidden="true" data-pgc="modalSort"> 
+                <div class="fade modal pg-show-modal" id="modalSort" tabindex="-1" role="dialog" aria-hidden="true" data-pgc="modalSort"> 
                     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-sm"> 
                         <div class="modal-content"> 
                             <div class="bg-light border-bottom-0 modal-header"> 
@@ -153,19 +152,15 @@
                 </div>
             </div>
         </main>
-        <footer class="backdrop-blur border-top fixed-bottom pb-safe-area" data-pgc="jasFooterTabs">
-            <div data-pg-name="actions" class="align-items-center d-flex h-tabs">
-                <div class="container px-0">
-                    <div class="align-items-center d-flex">
-                        <div class="btn-group w-100" role="group" aria-label="Basic example"> <a class="align-items-center btn btn-link d-inline-flex flex-column justify-content-start px-1 py-0 text-decoration-none text-muted" href="../articles/my-articles.html" data-pgc-field="jasTabsArticles"> <span class="mdi mdi-text-box-multiple"></span> <span style="font-size: 11px;">Articles</span> </a>
-                            <a class="align-items-center btn btn-link d-inline-flex flex-column justify-content-start px-1 py-0 text-decoration-none" href="all-journals.html" data-pgc-field="jasTabsJournals"> <span class="mdi mdi-book-multiple"></span> <span style="font-size: 11px;">Journals</span> </a>
-                            <a class="align-items-center btn btn-link d-inline-flex flex-column justify-content-start px-1 py-0 text-decoration-none text-muted" href="../societies/all-societies.html" data-pgc-field="jasTabsSocieties"> <span class="mdi mdi-account-multiple" data-pgc-field="optionalSocietyGeneralIcon"></span> <span style="font-size: 11px;" data-pgc-field="editableSocietyBtnLabel">Societies</span> </a>
-                            <a class="align-items-center btn btn-link d-inline-flex flex-column justify-content-start px-1 py-0 text-decoration-none text-muted" href="../search.html" data-pgc-field="jasTabsSearch"> <span class="mdi mdi-magnify"></span> <span style="font-size: 11px;">Search</span> </a>
-                            <a class="align-items-center btn btn-link d-inline-flex flex-column justify-content-start px-1 py-0 text-decoration-none text-muted" href="../settings.html" data-pgc-field="jasTabsSettings"> <span class="mdi mdi-cog"></span> <span style="font-size: 11px;">Settings</span> </a> 
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <footer class="backdrop-blur border-top fixed-bottom pb-safe-area" data-pgc="jasFooterTabs"> 
+            <div data-pg-name="actions" class="align-items-center d-flex h-tabs"> 
+                <div class="container px-0"> 
+                    <div class="align-items-center d-flex"> 
+                        <div class="btn-group w-100" role="group" aria-label="Basic example"> <a class="align-items-center btn btn-link d-inline-flex flex-column justify-content-start px-1 py-0 text-decoration-none text-muted" href="../articles/my-articles.html" data-pgc-field="jasTabsArticles"> <span class="mdi mdi-text-box-multiple"></span> <span style="font-size: 11px;">Articles</span> </a> <a class="align-items-center btn btn-link d-inline-flex flex-column justify-content-start px-1 py-0 text-decoration-none" href="all-journals.html" data-pgc-field="jasTabsJournals"> <span class="mdi mdi-book-multiple"></span> <span style="font-size: 11px;">Journals</span> </a> <a class="align-items-center btn btn-link d-inline-flex flex-column justify-content-start px-1 py-0 text-decoration-none text-muted" href="../societies/all-societies.html" data-pgc-field="jasTabsSocieties"> <span class="mdi mdi-account-multiple" data-pgc-field="optionalSocietyGeneralIcon"></span> <span style="font-size: 11px;" data-pgc-field="editableSocietyBtnLabel">Societies</span> </a> <a class="align-items-center btn btn-link d-inline-flex flex-column justify-content-start px-1 py-0 text-decoration-none text-muted" href="../search.html" data-pgc-field="jasTabsSearch"> <span class="mdi mdi-magnify"></span> <span style="font-size: 11px;">Search</span> </a> <a class="align-items-center btn btn-link d-inline-flex flex-column justify-content-start px-1 py-0 text-decoration-none text-muted" href="../settings.html" data-pgc-field="jasTabsSettings"> <span class="mdi mdi-cog"></span> <span style="font-size: 11px;">Settings</span> </a> 
+                        </div>                         
+                    </div>                     
+                </div>                 
+            </div>             
         </footer>
         <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -174,3 +169,38 @@
         <script src="../bootstrap/js/bootstrap.min.js"></script>
     </body>
 </html>
+<!--[Pinegrow components saved data - this data is no longer used in the component. We're saving it just in case. Clear this with Components -> Clear saved unused edits]<div data-pg-name="modals" data-pgc-field="optionalModals">
+                <div class="fade modal pg-show-modal" id="modalSort" tabindex="-1" role="dialog" aria-hidden="true" data-pgc="modalSort"> 
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-sm"> 
+                        <div class="modal-content"> 
+                            <div class="bg-light border-bottom-0 modal-header"> 
+                                <h4 class="modal-title">Sort by</h4> 
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>                                 
+                            </div>                             
+                            <div class="bg-light modal-body"> 
+                                <section class="mb-2">
+                                    <div class="list-group list-group-flush rounded shadow-sm"> <a class="active d-flex list-group-item px-2" href="#" data-pgc-field="modalSortItemLabel">Recently read<span class="mdi mdi-check ms-auto show-when-active"></span></a><a class="d-flex list-group-item px-2" href="#" data-pgc-field="modalSortItemLabel">Alphabetically<span class="mdi mdi-check ms-auto show-when-active"></span></a> 
+                                    </div>
+                                </section>
+                            </div>                             
+                        </div>                         
+                    </div>                     
+                </div>
+            </div><div data-pg-name="modals" data-pgc-field="optionalModals">
+                <div class="fade modal" id="modalSort" tabindex="-1" role="dialog" aria-hidden="true" data-pgc="modalSort"> 
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-sm"> 
+                        <div class="modal-content"> 
+                            <div class="bg-light border-bottom-0 modal-header"> 
+                                <h4 class="modal-title">Sort by</h4> 
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>                                 
+                            </div>                             
+                            <div class="bg-light modal-body"> 
+                                <section class="mb-2">
+                                    <div class="list-group list-group-flush rounded shadow-sm"> <a class="active d-flex list-group-item px-2" href="#" data-pgc-field="modalSortItemLabel">Recently read<span class="mdi mdi-check ms-auto show-when-active"></span></a><a class="d-flex list-group-item px-2" href="#" data-pgc-field="modalSortItemLabel">Alphabetically<span class="mdi mdi-check ms-auto show-when-active"></span></a> 
+                                    </div>
+                                </section>
+                            </div>                             
+                        </div>                         
+                    </div>                     
+                </div>
+            </div>-->

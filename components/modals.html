@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" data-pgc-master="head.html">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover"/>
+        <meta name="apple-mobile-web-app-status-bar-style" content="default"/>
+        <meta name="apple-mobile-web-app-capable" content="yes"/>
+        <meta name="description" content=""/>
+        <meta name="author" content=""/>
+        <title>Blank Template for Bootstrap</title>
+        <meta name="theme-color" content="#fff"/>
+        <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicons/apple-touch-icon.png"/>
+        <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicons/favicon-32x32.png"/>
+        <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicons/favicon-16x16.png"/>
+        <link rel="shortcut icon" href="../assets/favicons/favicon.ico"/>
+        <link rel="manifest" href="../manifest.json"/>
+        <!-- Bootstrap core CSS -->
+        <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+        <!-- Custom styles for this template -->
+        <link href="../style.css" rel="stylesheet"/>
+        <link href="https://cdn.jsdelivr.net/npm/@mdi/font@6.4.95/css/materialdesignicons.min.css" rel="stylesheet" type="text/css"/>
+        <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,400italic,700,700italic&display=swap" rel="stylesheet" type="text/css"/>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,700,700italic,400italic,400&display=swap" rel="stylesheet" type="text/css"/>
+    </head>
+    <body data-pgc-field="editableBody">
+        <main><h1>Modals</h1><section>
+        <h2>Basic</h2>
+        <div class="fade modal pg-show-modal" id="modalConfirm" tabindex="-1" role="dialog" aria-hidden="true" data-pgc-define="componentModalConfirm" data-pgc-edit="editableModalConfirm[id, no_content]" data-pgc-edit-classes="pg-show-modal"> 
+            <div class="modal-dialog modal-dialog-centered modal-sm"> 
+                <div class="modal-content"> 
+                    <div class="modal-header"> 
+                        <h4 class="modal-title" data-pgc-edit="editableModalTitle">Favorite all journals?</h4> 
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>                         
+                    </div>                     
+                    <div class="modal-body"> 
+                        <p data-pgc-edit="editableModalBodyCopy">Are you sure you want to favorite all <b>4</b> journals from this society?</p> 
+                    </div>                     
+                    <div class="modal-footer"> 
+                        <button type="button" class="btn btn-default" data-bs-dismiss="modal" data-pgc-edit="editableModalBtnCancel">Cancel</button>                         
+                        <button type="button" class="btn btn-primary" data-pgc-edit="editableModalBtnConfirm">Confirm</button>                         
+                    </div>                     
+                </div>                 
+            </div>             
+        </div>
+    </section><section>
+        <h2>Select</h2><div class="fade modal pg-show-modal" id="modalSort" tabindex="-1" role="dialog" aria-hidden="true" data-pgc-define="modalSort" data-pgc-define-name="modal-sort"> 
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-sm"> 
+                        <div class="modal-content"> 
+                            <div class="bg-light border-bottom-0 modal-header"> 
+                                <h4 class="modal-title">Sort by</h4> 
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>                                 
+                            </div>                             
+                            <div class="bg-light modal-body"> 
+                                <section class="mb-2">
+                                    <div class="list-group list-group-flush rounded shadow-sm"> <a class="active d-flex list-group-item px-2" href="#" data-pgc-repeat="modalSortItem" data-pgc-edit="modalSortItemLabel" data-pgc-edit-classes="active">Most relevant<span class="mdi mdi-check ms-auto show-when-active"></span></a> 
+                                    </div>
+                                </section>
+                            </div>                             
+                        </div>                         
+                    </div>                     
+                </div>
+        
+    </section></main>
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="../assets/js/popper.min.js"></script>
+        <script src="../bootstrap/js/bootstrap.min.js"></script>
+    </body>
+</html>
