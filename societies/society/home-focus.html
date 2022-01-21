@@ -47,7 +47,7 @@
                                     <li>
                                         <a class="align-items-center d-flex dropdown-item py-2" href="#"><span class="flex-grow-1">Hide branding</span><span class="mdi mdi-image-off ms-5 text-primary"></span></a>
                                     </li><li>
-                                        <a class="align-items-center d-flex dropdown-item py-2" href="home-enable-focus.html"><span class="flex-grow-1">Focus app on society</span><span class="mdi mdi-star-box-outline ms-5 text-primary"></span></a>
+                                        <a class="align-items-center d-flex dropdown-item py-2" href="Javascript:;" data-bs-target="#modal-disableFocus" data-bs-toggle="modal"><span class="flex-grow-1">Disable focus</span><span class="mdi mdi-star-off-outline ms-5 text-primary"></span></a>
                                     </li>
                                 </ul>
                             </div>
@@ -133,7 +133,26 @@
                 </div>
             </section>
             <div data-pg-name="modals" data-pgc-field="optionalModals">
-                <div class="modal fade" id="modalConfirmOneClick" tabindex="-1" role="dialog" aria-hidden="true"> 
+                <div class="modal fade" id="modal-disableFocus" tabindex="-1" role="dialog" aria-hidden="true"> 
+                    <div class="modal-dialog"> 
+                        <div class="modal-content"> 
+                            <div class="modal-header"> 
+                                <h4 class="modal-title">Disable focus?</h4> 
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>                                 
+                            </div>                             
+
+                            <div class="modal-body"> 
+                                <p>You can renable focus for this society at any time from the society&apos;s homepage or settings.</p> 
+                            </div>                             
+
+                            <div class="modal-footer"> 
+                                <button type="button" class="btn btn-default" data-bs-dismiss="modal">Cancel</button>                                 
+
+                                <a class="btn btn-primary" href="home.html">Disable focus</a>                                 
+                            </div>                             
+                        </div>                         
+                    </div>                     
+                </div><div class="modal fade" id="modalConfirmOneClick" tabindex="-1" role="dialog" aria-hidden="true"> 
                     <div class="modal-dialog modal-dialog-centered modal-sm"> 
                         <div class="modal-content"> 
                             <div class="modal-header"> 
