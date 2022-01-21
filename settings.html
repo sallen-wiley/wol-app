@@ -101,7 +101,7 @@
                     <div class="container">
                         <div>
                             <div class="d-flex justify-content-between align-items-center border-bottom">
-                                <a class="d-flex flex-grow-1 justify-content-between align-items-center text-decoration-none" href="#"><span class="d-flex flex-column py-2"><span>Disable focus mode</span></span></a>
+                                <a class="d-flex flex-grow-1 justify-content-between align-items-center text-decoration-none" href="#" data-bs-target="#modal-disableFocus" data-bs-toggle="modal"><span class="d-flex flex-column py-2"><span>Disable focus mode</span></span></a>
                             </div>
                             <div class="d-flex justify-content-between align-items-center">
                                 <a class="d-flex flex-grow-1 justify-content-between align-items-center text-decoration-none"><span class="d-flex flex-column py-2">Change focus</span><span class="mdi mdi-chevron-right"></span></a>
@@ -174,7 +174,27 @@
                     </div>
                 </div>
             </section>
-        </main>
+        <div data-pg-name="modals" data-pgc-field="optionalModals"><div class="fade modal" id="modal-disableFocus" tabindex="-1" role="dialog" aria-hidden="true" data-pgc="componentModalConfirm" data-pgc-field="editableModalConfirm"> 
+                    <div class="modal-dialog modal-dialog-centered modal-sm"> 
+                        <div class="modal-content"> 
+                            <div class="modal-header"> 
+                                <h4 class="modal-title" data-pgc-field="editableModalTitle">Disable focus?</h4> 
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>                                 
+                            </div>                             
+                            <div class="modal-body"> 
+                                <p data-pgc-field="editableModalBodyCopy">You can enable focus from the society home menu or settings.</p> 
+                            </div>                             
+                            <div class="modal-footer"> 
+                                <button type="button" class="btn btn-default" data-bs-dismiss="modal" data-pgc-field="editableModalBtnCancel">Cancel</button>                                 
+                                <button type="button" class="btn btn-primary" data-pgc-field="editableModalBtnConfirm">Disable focus</button>                                 
+                            </div>                             
+                        </div>                         
+                    </div>                     
+                </div>
+                
+                
+                
+            </div></main>
         <footer class="backdrop-blur border-top fixed-bottom pb-safe-area" data-pgc="jasFooterTabs">
             <div data-pg-name="actions" class="align-items-center d-flex h-tabs">
                 <div class="container px-0">
